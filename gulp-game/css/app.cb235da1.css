@@ -1,1 +1,0 @@
-html{background-color:#daffda!important}body,html{height:100%}body{flex-direction:column;justify-content:center}#app,body{display:flex}#app{width:100%;background-color:#fff;flex-direction:row;align-items:stretch;border:5px solid #308300}.two{flex-grow:1;background-color:#308300}.stack{position:absolute}.rings{pointer-events:none}
