@@ -2,6 +2,7 @@
 const main = () => {
   const videos = document.querySelectorAll('video')
   const checkEntry = entry => {
+    console.log('test')
     if (entry.isIntersecting) {
       entry.target.play()
     } else {
