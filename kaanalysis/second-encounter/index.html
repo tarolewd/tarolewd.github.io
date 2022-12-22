@@ -1,0 +1,1411 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kaanalysis: First Encounter</title>
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Kaanalysis: The Second Encounter">
+  <meta property="og:description" content="A detailed analysis of Kaa and Mowgli's second encounter.">
+  <meta property="og:image" content="https://tarolewd.github.io/kaanalysis/second-encounter/metaimg.png">
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:title" content="Kaanalysis: The Second Encounter">
+  <meta property="twitter:description" content="A detailed analysis of Kaa and Mowgli's second encounter.">
+  <meta property="twitter:image" content="https://tarolewd.github.io/kaanalysis/second-encounter/metaimg.png">
+  <script type="module" crossorigin>
+(function(){const r=document.createElement("link").relList;if(r&&r.supports&&r.supports("modulepreload"))return;for(const e of document.querySelectorAll('link[rel="modulepreload"]'))l(e);new MutationObserver(e=>{for(const t of e)if(t.type==="childList")for(const n of t.addedNodes)n.tagName==="LINK"&&n.rel==="modulepreload"&&l(n)}).observe(document,{childList:!0,subtree:!0});function d(e){const t={};return e.integrity&&(t.integrity=e.integrity),e.referrerpolicy&&(t.referrerPolicy=e.referrerpolicy),e.crossorigin==="use-credentials"?t.credentials="include":e.crossorigin==="anonymous"?t.credentials="omit":t.credentials="same-origin",t}function l(e){if(e.ep)return;e.ep=!0;const t=d(e);fetch(e.href,t)}})();var c;let o=localStorage.getItem("theme")||((c=window.matchMedia("(prefers-color-scheme: dark)"))!=null&&c.matches?"dark":"light");const s=()=>{o==="light"?(document.documentElement.setAttribute("data-theme","dark"),localStorage.setItem("theme","dark"),o="dark"):(document.documentElement.setAttribute("data-theme","light"),localStorage.setItem("theme","light"),o="light")},a=async()=>{document.documentElement.setAttribute("data-theme",o),document.getElementById("button-themen").addEventListener("click",s),await new Promise(i=>requestAnimationFrame(i)),document.getElementById("app").style.setProperty("opacity","1")};document.addEventListener("DOMContentLoaded",a);
+
+</script>
+  <style>
+@charset "UTF-8";/*!
+ * Pico.css v1.5.5 (https://picocss.com)
+ * Copyright 2019-2022 - Licensed under MIT
+ */:root{--font-family: system-ui, -apple-system, "Segoe UI", "Roboto", "Ubuntu", "Cantarell", "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";--line-height: 1.5;--font-weight: 400;--font-size: 16px;--border-radius: .25rem;--border-width: 1px;--outline-width: 3px;--spacing: 1rem;--typography-spacing-vertical: 1.5rem;--block-spacing-vertical: calc(var(--spacing) * 2);--block-spacing-horizontal: var(--spacing);--grid-spacing-vertical: 0;--grid-spacing-horizontal: var(--spacing);--form-element-spacing-vertical: .75rem;--form-element-spacing-horizontal: 1rem;--nav-element-spacing-vertical: 1rem;--nav-element-spacing-horizontal: .5rem;--nav-link-spacing-vertical: .5rem;--nav-link-spacing-horizontal: .5rem;--form-label-font-weight: var(--font-weight);--transition: .2s ease-in-out;--modal-overlay-backdrop-filter: blur(.25rem)}@media (min-width: 576px){:root{--font-size: 17px}}@media (min-width: 768px){:root{--font-size: 18px}}@media (min-width: 992px){:root{--font-size: 19px}}@media (min-width: 1200px){:root{--font-size: 20px}}@media (min-width: 576px){body>header,body>main,body>footer,section{--block-spacing-vertical: calc(var(--spacing) * 2.5)}}@media (min-width: 768px){body>header,body>main,body>footer,section{--block-spacing-vertical: calc(var(--spacing) * 3)}}@media (min-width: 992px){body>header,body>main,body>footer,section{--block-spacing-vertical: calc(var(--spacing) * 3.5)}}@media (min-width: 1200px){body>header,body>main,body>footer,section{--block-spacing-vertical: calc(var(--spacing) * 4)}}@media (min-width: 576px){article{--block-spacing-horizontal: calc(var(--spacing) * 1.25)}}@media (min-width: 768px){article{--block-spacing-horizontal: calc(var(--spacing) * 1.5)}}@media (min-width: 992px){article{--block-spacing-horizontal: calc(var(--spacing) * 1.75)}}@media (min-width: 1200px){article{--block-spacing-horizontal: calc(var(--spacing) * 2)}}dialog>article{--block-spacing-vertical: calc(var(--spacing) * 2);--block-spacing-horizontal: var(--spacing)}@media (min-width: 576px){dialog>article{--block-spacing-vertical: calc(var(--spacing) * 2.5);--block-spacing-horizontal: calc(var(--spacing) * 1.25)}}@media (min-width: 768px){dialog>article{--block-spacing-vertical: calc(var(--spacing) * 3);--block-spacing-horizontal: calc(var(--spacing) * 1.5)}}a{--text-decoration: none}a.secondary,a.contrast{--text-decoration: underline}small{--font-size: .875em}h1,h2,h3,h4,h5,h6{--font-weight: 700}h1{--font-size: 2rem;--typography-spacing-vertical: 3rem}h2{--font-size: 1.75rem;--typography-spacing-vertical: 2.625rem}h3{--font-size: 1.5rem;--typography-spacing-vertical: 2.25rem}h4{--font-size: 1.25rem;--typography-spacing-vertical: 1.874rem}h5{--font-size: 1.125rem;--typography-spacing-vertical: 1.6875rem}[type=checkbox],[type=radio]{--border-width: 2px}[type=checkbox][role=switch],thead th,thead td,tfoot th,tfoot td{--border-width: 3px}:not(thead,tfoot)>*>td{--font-size: .875em}pre,code,kbd,samp{--font-family: "Menlo", "Consolas", "Roboto Mono", "Ubuntu Monospace", "Noto Mono", "Oxygen Mono", "Liberation Mono", monospace, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"}kbd{--font-weight: bolder}[data-theme=light],:root:not([data-theme=dark]){--background-color: #fff;--color: hsl(205deg, 20%, 32%);--h1-color: hsl(205deg, 30%, 15%);--h2-color: #24333e;--h3-color: hsl(205deg, 25%, 23%);--h4-color: #374956;--h5-color: hsl(205deg, 20%, 32%);--h6-color: #4d606d;--muted-color: hsl(205deg, 10%, 50%);--muted-border-color: hsl(205deg, 20%, 94%);--primary: hsl(195deg, 85%, 41%);--primary-hover: hsl(195deg, 90%, 32%);--primary-focus: rgba(16, 149, 193, .125);--primary-inverse: #fff;--secondary: hsl(205deg, 15%, 41%);--secondary-hover: hsl(205deg, 20%, 32%);--secondary-focus: rgba(89, 107, 120, .125);--secondary-inverse: #fff;--contrast: hsl(205deg, 30%, 15%);--contrast-hover: #000;--contrast-focus: rgba(89, 107, 120, .125);--contrast-inverse: #fff;--mark-background-color: #fff2ca;--mark-color: #543a26;--ins-color: #388e3c;--del-color: #c62828;--blockquote-border-color: var(--muted-border-color);--blockquote-footer-color: var(--muted-color);--button-box-shadow: 0 0 0 rgba(0, 0, 0, 0);--button-hover-box-shadow: 0 0 0 rgba(0, 0, 0, 0);--form-element-background-color: transparent;--form-element-border-color: hsl(205deg, 14%, 68%);--form-element-color: var(--color);--form-element-placeholder-color: var(--muted-color);--form-element-active-background-color: transparent;--form-element-active-border-color: var(--primary);--form-element-focus-color: var(--primary-focus);--form-element-disabled-background-color: hsl(205deg, 18%, 86%);--form-element-disabled-border-color: hsl(205deg, 14%, 68%);--form-element-disabled-opacity: .5;--form-element-invalid-border-color: #c62828;--form-element-invalid-active-border-color: #d32f2f;--form-element-invalid-focus-color: rgba(211, 47, 47, .125);--form-element-valid-border-color: #388e3c;--form-element-valid-active-border-color: #43a047;--form-element-valid-focus-color: rgba(67, 160, 71, .125);--switch-background-color: hsl(205deg, 16%, 77%);--switch-color: var(--primary-inverse);--switch-checked-background-color: var(--primary);--range-border-color: hsl(205deg, 18%, 86%);--range-active-border-color: hsl(205deg, 16%, 77%);--range-thumb-border-color: var(--background-color);--range-thumb-color: var(--secondary);--range-thumb-hover-color: var(--secondary-hover);--range-thumb-active-color: var(--primary);--table-border-color: var(--muted-border-color);--table-row-stripped-background-color: #f6f8f9;--code-background-color: hsl(205deg, 20%, 94%);--code-color: var(--muted-color);--code-kbd-background-color: var(--contrast);--code-kbd-color: var(--contrast-inverse);--code-tag-color: hsl(330deg, 40%, 50%);--code-property-color: hsl(185deg, 40%, 40%);--code-value-color: hsl(40deg, 20%, 50%);--code-comment-color: hsl(205deg, 14%, 68%);--accordion-border-color: var(--muted-border-color);--accordion-close-summary-color: var(--color);--accordion-open-summary-color: var(--muted-color);--card-background-color: var(--background-color);--card-border-color: var(--muted-border-color);--card-box-shadow: .0145rem .029rem .174rem rgba(27, 40, 50, .01698), .0335rem .067rem .402rem rgba(27, 40, 50, .024), .0625rem .125rem .75rem rgba(27, 40, 50, .03), .1125rem .225rem 1.35rem rgba(27, 40, 50, .036), .2085rem .417rem 2.502rem rgba(27, 40, 50, .04302), .5rem 1rem 6rem rgba(27, 40, 50, .06), 0 0 0 .0625rem rgba(27, 40, 50, .015);--card-sectionning-background-color: #fbfbfc;--dropdown-background-color: #fbfbfc;--dropdown-border-color: #e1e6eb;--dropdown-box-shadow: var(--card-box-shadow);--dropdown-color: var(--color);--dropdown-hover-background-color: hsl(205deg, 20%, 94%);--modal-overlay-background-color: rgba(213, 220, 226, .7);--progress-background-color: hsl(205deg, 18%, 86%);--progress-color: var(--primary);--loading-spinner-opacity: .5;--tooltip-background-color: var(--contrast);--tooltip-color: var(--contrast-inverse);--icon-checkbox: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='rgb(255, 255, 255)' stroke-width='4' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='20 6 9 17 4 12'%3E%3C/polyline%3E%3C/svg%3E");--icon-chevron: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='rgb(65, 84, 98)' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E");--icon-chevron-button: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='rgb(255, 255, 255)' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E");--icon-chevron-button-inverse: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='rgb(255, 255, 255)' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E");--icon-close: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='rgb(115, 130, 140)' stroke-width='4' stroke-linecap='round' stroke-linejoin='round'%3E%3Cline x1='18' y1='6' x2='6' y2='18'%3E%3C/line%3E%3Cline x1='6' y1='6' x2='18' y2='18'%3E%3C/line%3E%3C/svg%3E");--icon-date: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='rgb(65, 84, 98)' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Crect x='3' y='4' width='18' height='18' rx='2' ry='2'%3E%3C/rect%3E%3Cline x1='16' y1='2' x2='16' y2='6'%3E%3C/line%3E%3Cline x1='8' y1='2' x2='8' y2='6'%3E%3C/line%3E%3Cline x1='3' y1='10' x2='21' y2='10'%3E%3C/line%3E%3C/svg%3E");--icon-invalid: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='rgb(198, 40, 40)' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='12' cy='12' r='10'%3E%3C/circle%3E%3Cline x1='12' y1='8' x2='12' y2='12'%3E%3C/line%3E%3Cline x1='12' y1='16' x2='12.01' y2='16'%3E%3C/line%3E%3C/svg%3E");--icon-minus: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='rgb(255, 255, 255)' stroke-width='4' stroke-linecap='round' stroke-linejoin='round'%3E%3Cline x1='5' y1='12' x2='19' y2='12'%3E%3C/line%3E%3C/svg%3E");--icon-search: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='rgb(65, 84, 98)' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='11' cy='11' r='8'%3E%3C/circle%3E%3Cline x1='21' y1='21' x2='16.65' y2='16.65'%3E%3C/line%3E%3C/svg%3E");--icon-time: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='rgb(65, 84, 98)' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='12' cy='12' r='10'%3E%3C/circle%3E%3Cpolyline points='12 6 12 12 16 14'%3E%3C/polyline%3E%3C/svg%3E");--icon-valid: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='rgb(56, 142, 60)' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='20 6 9 17 4 12'%3E%3C/polyline%3E%3C/svg%3E");color-scheme:light}@media only screen and (prefers-color-scheme: dark){:root:not([data-theme=light]){--background-color: #11191f;--color: hsl(205deg, 16%, 77%);--h1-color: hsl(205deg, 20%, 94%);--h2-color: #e1e6eb;--h3-color: hsl(205deg, 18%, 86%);--h4-color: #c8d1d8;--h5-color: hsl(205deg, 16%, 77%);--h6-color: #afbbc4;--muted-color: hsl(205deg, 10%, 50%);--muted-border-color: #1f2d38;--primary: hsl(195deg, 85%, 41%);--primary-hover: hsl(195deg, 80%, 50%);--primary-focus: rgba(16, 149, 193, .25);--primary-inverse: #fff;--secondary: hsl(205deg, 15%, 41%);--secondary-hover: hsl(205deg, 10%, 50%);--secondary-focus: rgba(115, 130, 140, .25);--secondary-inverse: #fff;--contrast: hsl(205deg, 20%, 94%);--contrast-hover: #fff;--contrast-focus: rgba(115, 130, 140, .25);--contrast-inverse: #000;--mark-background-color: #d1c284;--mark-color: #11191f;--ins-color: #388e3c;--del-color: #c62828;--blockquote-border-color: var(--muted-border-color);--blockquote-footer-color: var(--muted-color);--button-box-shadow: 0 0 0 rgba(0, 0, 0, 0);--button-hover-box-shadow: 0 0 0 rgba(0, 0, 0, 0);--form-element-background-color: #11191f;--form-element-border-color: #374956;--form-element-color: var(--color);--form-element-placeholder-color: var(--muted-color);--form-element-active-background-color: var(--form-element-background-color);--form-element-active-border-color: var(--primary);--form-element-focus-color: var(--primary-focus);--form-element-disabled-background-color: hsl(205deg, 25%, 23%);--form-element-disabled-border-color: hsl(205deg, 20%, 32%);--form-element-disabled-opacity: .5;--form-element-invalid-border-color: #b71c1c;--form-element-invalid-active-border-color: #c62828;--form-element-invalid-focus-color: rgba(198, 40, 40, .25);--form-element-valid-border-color: #2e7d32;--form-element-valid-active-border-color: #388e3c;--form-element-valid-focus-color: rgba(56, 142, 60, .25);--switch-background-color: #374956;--switch-color: var(--primary-inverse);--switch-checked-background-color: var(--primary);--range-border-color: #24333e;--range-active-border-color: hsl(205deg, 25%, 23%);--range-thumb-border-color: var(--background-color);--range-thumb-color: var(--secondary);--range-thumb-hover-color: var(--secondary-hover);--range-thumb-active-color: var(--primary);--table-border-color: var(--muted-border-color);--table-row-stripped-background-color: rgba(115, 130, 140, .05);--code-background-color: #18232c;--code-color: var(--muted-color);--code-kbd-background-color: var(--contrast);--code-kbd-color: var(--contrast-inverse);--code-tag-color: hsl(330deg, 30%, 50%);--code-property-color: hsl(185deg, 30%, 50%);--code-value-color: hsl(40deg, 10%, 50%);--code-comment-color: #4d606d;--accordion-border-color: var(--muted-border-color);--accordion-active-summary-color: var(--primary);--accordion-close-summary-color: var(--color);--accordion-open-summary-color: var(--muted-color);--card-background-color: #141e26;--card-border-color: var(--card-background-color);--card-box-shadow: .0145rem .029rem .174rem rgba(0, 0, 0, .01698), .0335rem .067rem .402rem rgba(0, 0, 0, .024), .0625rem .125rem .75rem rgba(0, 0, 0, .03), .1125rem .225rem 1.35rem rgba(0, 0, 0, .036), .2085rem .417rem 2.502rem rgba(0, 0, 0, .04302), .5rem 1rem 6rem rgba(0, 0, 0, .06), 0 0 0 .0625rem rgba(0, 0, 0, .015);--card-sectionning-background-color: #18232c;--dropdown-background-color: hsl(205deg, 30%, 15%);--dropdown-border-color: #24333e;--dropdown-box-shadow: var(--card-box-shadow);--dropdown-color: var(--color);--dropdown-hover-background-color: rgba(36, 51, 62, .75);--modal-overlay-background-color: rgba(36, 51, 62, .8);--progress-background-color: #24333e;--progress-color: var(--primary);--loading-spinner-opacity: .5;--tooltip-background-color: var(--contrast);--tooltip-color: var(--contrast-inverse);--icon-checkbox: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='rgb(255, 255, 255)' stroke-width='4' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='20 6 9 17 4 12'%3E%3C/polyline%3E%3C/svg%3E");--icon-chevron: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='rgb(162, 175, 185)' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E");--icon-chevron-button: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='rgb(255, 255, 255)' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E");--icon-chevron-button-inverse: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='rgb(0, 0, 0)' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E");--icon-close: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='rgb(115, 130, 140)' stroke-width='4' stroke-linecap='round' stroke-linejoin='round'%3E%3Cline x1='18' y1='6' x2='6' y2='18'%3E%3C/line%3E%3Cline x1='6' y1='6' x2='18' y2='18'%3E%3C/line%3E%3C/svg%3E");--icon-date: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='rgb(162, 175, 185)' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Crect x='3' y='4' width='18' height='18' rx='2' ry='2'%3E%3C/rect%3E%3Cline x1='16' y1='2' x2='16' y2='6'%3E%3C/line%3E%3Cline x1='8' y1='2' x2='8' y2='6'%3E%3C/line%3E%3Cline x1='3' y1='10' x2='21' y2='10'%3E%3C/line%3E%3C/svg%3E");--icon-invalid: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='rgb(183, 28, 28)' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='12' cy='12' r='10'%3E%3C/circle%3E%3Cline x1='12' y1='8' x2='12' y2='12'%3E%3C/line%3E%3Cline x1='12' y1='16' x2='12.01' y2='16'%3E%3C/line%3E%3C/svg%3E");--icon-minus: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='rgb(255, 255, 255)' stroke-width='4' stroke-linecap='round' stroke-linejoin='round'%3E%3Cline x1='5' y1='12' x2='19' y2='12'%3E%3C/line%3E%3C/svg%3E");--icon-search: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='rgb(162, 175, 185)' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='11' cy='11' r='8'%3E%3C/circle%3E%3Cline x1='21' y1='21' x2='16.65' y2='16.65'%3E%3C/line%3E%3C/svg%3E");--icon-time: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='rgb(162, 175, 185)' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='12' cy='12' r='10'%3E%3C/circle%3E%3Cpolyline points='12 6 12 12 16 14'%3E%3C/polyline%3E%3C/svg%3E");--icon-valid: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='rgb(46, 125, 50)' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='20 6 9 17 4 12'%3E%3C/polyline%3E%3C/svg%3E");color-scheme:dark}}[data-theme=dark]{--background-color: #11191f;--color: hsl(205deg, 16%, 77%);--h1-color: hsl(205deg, 20%, 94%);--h2-color: #e1e6eb;--h3-color: hsl(205deg, 18%, 86%);--h4-color: #c8d1d8;--h5-color: hsl(205deg, 16%, 77%);--h6-color: #afbbc4;--muted-color: hsl(205deg, 10%, 50%);--muted-border-color: #1f2d38;--primary: hsl(195deg, 85%, 41%);--primary-hover: hsl(195deg, 80%, 50%);--primary-focus: rgba(16, 149, 193, .25);--primary-inverse: #fff;--secondary: hsl(205deg, 15%, 41%);--secondary-hover: hsl(205deg, 10%, 50%);--secondary-focus: rgba(115, 130, 140, .25);--secondary-inverse: #fff;--contrast: hsl(205deg, 20%, 94%);--contrast-hover: #fff;--contrast-focus: rgba(115, 130, 140, .25);--contrast-inverse: #000;--mark-background-color: #d1c284;--mark-color: #11191f;--ins-color: #388e3c;--del-color: #c62828;--blockquote-border-color: var(--muted-border-color);--blockquote-footer-color: var(--muted-color);--button-box-shadow: 0 0 0 rgba(0, 0, 0, 0);--button-hover-box-shadow: 0 0 0 rgba(0, 0, 0, 0);--form-element-background-color: #11191f;--form-element-border-color: #374956;--form-element-color: var(--color);--form-element-placeholder-color: var(--muted-color);--form-element-active-background-color: var(--form-element-background-color);--form-element-active-border-color: var(--primary);--form-element-focus-color: var(--primary-focus);--form-element-disabled-background-color: hsl(205deg, 25%, 23%);--form-element-disabled-border-color: hsl(205deg, 20%, 32%);--form-element-disabled-opacity: .5;--form-element-invalid-border-color: #b71c1c;--form-element-invalid-active-border-color: #c62828;--form-element-invalid-focus-color: rgba(198, 40, 40, .25);--form-element-valid-border-color: #2e7d32;--form-element-valid-active-border-color: #388e3c;--form-element-valid-focus-color: rgba(56, 142, 60, .25);--switch-background-color: #374956;--switch-color: var(--primary-inverse);--switch-checked-background-color: var(--primary);--range-border-color: #24333e;--range-active-border-color: hsl(205deg, 25%, 23%);--range-thumb-border-color: var(--background-color);--range-thumb-color: var(--secondary);--range-thumb-hover-color: var(--secondary-hover);--range-thumb-active-color: var(--primary);--table-border-color: var(--muted-border-color);--table-row-stripped-background-color: rgba(115, 130, 140, .05);--code-background-color: #18232c;--code-color: var(--muted-color);--code-kbd-background-color: var(--contrast);--code-kbd-color: var(--contrast-inverse);--code-tag-color: hsl(330deg, 30%, 50%);--code-property-color: hsl(185deg, 30%, 50%);--code-value-color: hsl(40deg, 10%, 50%);--code-comment-color: #4d606d;--accordion-border-color: var(--muted-border-color);--accordion-active-summary-color: var(--primary);--accordion-close-summary-color: var(--color);--accordion-open-summary-color: var(--muted-color);--card-background-color: #141e26;--card-border-color: var(--card-background-color);--card-box-shadow: .0145rem .029rem .174rem rgba(0, 0, 0, .01698), .0335rem .067rem .402rem rgba(0, 0, 0, .024), .0625rem .125rem .75rem rgba(0, 0, 0, .03), .1125rem .225rem 1.35rem rgba(0, 0, 0, .036), .2085rem .417rem 2.502rem rgba(0, 0, 0, .04302), .5rem 1rem 6rem rgba(0, 0, 0, .06), 0 0 0 .0625rem rgba(0, 0, 0, .015);--card-sectionning-background-color: #18232c;--dropdown-background-color: hsl(205deg, 30%, 15%);--dropdown-border-color: #24333e;--dropdown-box-shadow: var(--card-box-shadow);--dropdown-color: var(--color);--dropdown-hover-background-color: rgba(36, 51, 62, .75);--modal-overlay-background-color: rgba(36, 51, 62, .8);--progress-background-color: #24333e;--progress-color: var(--primary);--loading-spinner-opacity: .5;--tooltip-background-color: var(--contrast);--tooltip-color: var(--contrast-inverse);--icon-checkbox: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='rgb(255, 255, 255)' stroke-width='4' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='20 6 9 17 4 12'%3E%3C/polyline%3E%3C/svg%3E");--icon-chevron: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='rgb(162, 175, 185)' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E");--icon-chevron-button: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='rgb(255, 255, 255)' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E");--icon-chevron-button-inverse: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='rgb(0, 0, 0)' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E");--icon-close: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='rgb(115, 130, 140)' stroke-width='4' stroke-linecap='round' stroke-linejoin='round'%3E%3Cline x1='18' y1='6' x2='6' y2='18'%3E%3C/line%3E%3Cline x1='6' y1='6' x2='18' y2='18'%3E%3C/line%3E%3C/svg%3E");--icon-date: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='rgb(162, 175, 185)' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Crect x='3' y='4' width='18' height='18' rx='2' ry='2'%3E%3C/rect%3E%3Cline x1='16' y1='2' x2='16' y2='6'%3E%3C/line%3E%3Cline x1='8' y1='2' x2='8' y2='6'%3E%3C/line%3E%3Cline x1='3' y1='10' x2='21' y2='10'%3E%3C/line%3E%3C/svg%3E");--icon-invalid: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='rgb(183, 28, 28)' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='12' cy='12' r='10'%3E%3C/circle%3E%3Cline x1='12' y1='8' x2='12' y2='12'%3E%3C/line%3E%3Cline x1='12' y1='16' x2='12.01' y2='16'%3E%3C/line%3E%3C/svg%3E");--icon-minus: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='rgb(255, 255, 255)' stroke-width='4' stroke-linecap='round' stroke-linejoin='round'%3E%3Cline x1='5' y1='12' x2='19' y2='12'%3E%3C/line%3E%3C/svg%3E");--icon-search: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='rgb(162, 175, 185)' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='11' cy='11' r='8'%3E%3C/circle%3E%3Cline x1='21' y1='21' x2='16.65' y2='16.65'%3E%3C/line%3E%3C/svg%3E");--icon-time: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='rgb(162, 175, 185)' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='12' cy='12' r='10'%3E%3C/circle%3E%3Cpolyline points='12 6 12 12 16 14'%3E%3C/polyline%3E%3C/svg%3E");--icon-valid: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='rgb(46, 125, 50)' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='20 6 9 17 4 12'%3E%3C/polyline%3E%3C/svg%3E");color-scheme:dark}progress,[type=checkbox],[type=radio],[type=range]{accent-color:var(--primary)}*,*:before,*:after{box-sizing:border-box;background-repeat:no-repeat}:before,:after{text-decoration:inherit;vertical-align:inherit}:where(:root){-webkit-tap-highlight-color:transparent;-webkit-text-size-adjust:100%;-moz-text-size-adjust:100%;text-size-adjust:100%;background-color:var(--background-color);color:var(--color);font-weight:var(--font-weight);font-size:var(--font-size);line-height:var(--line-height);font-family:var(--font-family);text-rendering:optimizeLegibility;overflow-wrap:break-word;cursor:default;-moz-tab-size:4;-o-tab-size:4;tab-size:4}main{display:block}body{width:100%;margin:0}body>header,body>main,body>footer{width:100%;margin-right:auto;margin-left:auto;padding:var(--block-spacing-vertical) 0}.container,.container-fluid{width:100%;margin-right:auto;margin-left:auto;padding-right:var(--spacing);padding-left:var(--spacing)}@media (min-width: 576px){.container{max-width:510px;padding-right:0;padding-left:0}}@media (min-width: 768px){.container{max-width:700px}}@media (min-width: 992px){.container{max-width:920px}}@media (min-width: 1200px){.container{max-width:1130px}}section{margin-bottom:var(--block-spacing-vertical)}.grid{grid-column-gap:var(--grid-spacing-horizontal);grid-row-gap:var(--grid-spacing-vertical);display:grid;grid-template-columns:1fr;margin:0}@media (min-width: 992px){.grid{grid-template-columns:repeat(auto-fit,minmax(0%,1fr))}}.grid>*{min-width:0}figure{display:block;margin:0;padding:0;overflow-x:auto}figure figcaption{padding:calc(var(--spacing) * .5) 0;color:var(--muted-color)}b,strong{font-weight:bolder}sub,sup{position:relative;font-size:.75em;line-height:0;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}address,blockquote,dl,figure,form,ol,p,pre,table,ul{margin-top:0;margin-bottom:var(--typography-spacing-vertical);color:var(--color);font-style:normal;font-weight:var(--font-weight);font-size:var(--font-size)}a,[role=link]{--color: var(--primary);--background-color: transparent;outline:none;background-color:var(--background-color);color:var(--color);-webkit-text-decoration:var(--text-decoration);text-decoration:var(--text-decoration);transition:background-color var(--transition),color var(--transition),box-shadow var(--transition),-webkit-text-decoration var(--transition);transition:background-color var(--transition),color var(--transition),text-decoration var(--transition),box-shadow var(--transition);transition:background-color var(--transition),color var(--transition),text-decoration var(--transition),box-shadow var(--transition),-webkit-text-decoration var(--transition)}a:is([aria-current],:hover,:active,:focus),[role=link]:is([aria-current],:hover,:active,:focus){--color: var(--primary-hover);--text-decoration: underline}a:focus,[role=link]:focus{--background-color: var(--primary-focus)}a.secondary,[role=link].secondary{--color: var(--secondary)}a.secondary:is([aria-current],:hover,:active,:focus),[role=link].secondary:is([aria-current],:hover,:active,:focus){--color: var(--secondary-hover)}a.secondary:focus,[role=link].secondary:focus{--background-color: var(--secondary-focus)}a.contrast,[role=link].contrast{--color: var(--contrast)}a.contrast:is([aria-current],:hover,:active,:focus),[role=link].contrast:is([aria-current],:hover,:active,:focus){--color: var(--contrast-hover)}a.contrast:focus,[role=link].contrast:focus{--background-color: var(--contrast-focus)}h1,h2,h3,h4,h5,h6{margin-top:0;margin-bottom:var(--typography-spacing-vertical);color:var(--color);font-weight:var(--font-weight);font-size:var(--font-size);font-family:var(--font-family)}h1{--color: var(--h1-color)}h2{--color: var(--h2-color)}h3{--color: var(--h3-color)}h4{--color: var(--h4-color)}h5{--color: var(--h5-color)}h6{--color: var(--h6-color)}:where(address,blockquote,dl,figure,form,ol,p,pre,table,ul)~:is(h1,h2,h3,h4,h5,h6){margin-top:var(--typography-spacing-vertical)}hgroup,.headings{margin-bottom:var(--typography-spacing-vertical)}hgroup>*,.headings>*{margin-bottom:0}hgroup>*:last-child,.headings>*:last-child{--color: var(--muted-color);--font-weight: unset;font-size:1rem;font-family:unset}p{margin-bottom:var(--typography-spacing-vertical)}small{font-size:var(--font-size)}:where(dl,ol,ul){padding-right:0;padding-left:var(--spacing);-webkit-padding-start:var(--spacing);padding-inline-start:var(--spacing);-webkit-padding-end:0;padding-inline-end:0}:where(dl,ol,ul) li{margin-bottom:calc(var(--typography-spacing-vertical) * .25)}:where(dl,ol,ul) :is(dl,ol,ul){margin:0;margin-top:calc(var(--typography-spacing-vertical) * .25)}ul li{list-style:square}mark{padding:.125rem .25rem;background-color:var(--mark-background-color);color:var(--mark-color);vertical-align:baseline}blockquote{display:block;margin:var(--typography-spacing-vertical) 0;padding:var(--spacing);border-right:none;border-left:.25rem solid var(--blockquote-border-color);-webkit-border-start:.25rem solid var(--blockquote-border-color);border-inline-start:.25rem solid var(--blockquote-border-color);-webkit-border-end:none;border-inline-end:none}blockquote footer{margin-top:calc(var(--typography-spacing-vertical) * .5);color:var(--blockquote-footer-color)}abbr[title]{border-bottom:1px dotted;text-decoration:none;cursor:help}ins{color:var(--ins-color);text-decoration:none}del{color:var(--del-color)}::-moz-selection{background-color:var(--primary-focus)}::selection{background-color:var(--primary-focus)}:where(audio,canvas,iframe,img,svg,video){vertical-align:middle}audio,video{display:inline-block}audio:not([controls]){display:none;height:0}:where(iframe){border-style:none}img{max-width:100%;height:auto;border-style:none}:where(svg:not([fill])){fill:currentColor}svg:not(:root){overflow:hidden}button{margin:0;overflow:visible;font-family:inherit;text-transform:none}button,[type=button],[type=reset],[type=submit]{-webkit-appearance:button}button{display:block;width:100%;margin-bottom:var(--spacing)}[role=button]{display:inline-block;text-decoration:none}button,input[type=submit],input[type=button],input[type=reset],[role=button]{--background-color: var(--primary);--border-color: var(--primary);--color: var(--primary-inverse);--box-shadow: var(--button-box-shadow, 0 0 0 rgba(0, 0, 0, 0));padding:var(--form-element-spacing-vertical) var(--form-element-spacing-horizontal);border:var(--border-width) solid var(--border-color);border-radius:var(--border-radius);outline:none;background-color:var(--background-color);box-shadow:var(--box-shadow);color:var(--color);font-weight:var(--font-weight);font-size:1rem;line-height:var(--line-height);text-align:center;cursor:pointer;transition:background-color var(--transition),border-color var(--transition),color var(--transition),box-shadow var(--transition)}button:is([aria-current],:hover,:active,:focus),input[type=submit]:is([aria-current],:hover,:active,:focus),input[type=button]:is([aria-current],:hover,:active,:focus),input[type=reset]:is([aria-current],:hover,:active,:focus),[role=button]:is([aria-current],:hover,:active,:focus){--background-color: var(--primary-hover);--border-color: var(--primary-hover);--box-shadow: var(--button-hover-box-shadow, 0 0 0 rgba(0, 0, 0, 0));--color: var(--primary-inverse)}button:focus,input[type=submit]:focus,input[type=button]:focus,input[type=reset]:focus,[role=button]:focus{--box-shadow: var(--button-hover-box-shadow, 0 0 0 rgba(0, 0, 0, 0)), 0 0 0 var(--outline-width) var(--primary-focus)}:is(button,input[type=submit],input[type=button],[role=button]).secondary,input[type=reset]{--background-color: var(--secondary);--border-color: var(--secondary);--color: var(--secondary-inverse);cursor:pointer}:is(button,input[type=submit],input[type=button],[role=button]).secondary:is([aria-current],:hover,:active,:focus),input[type=reset]:is([aria-current],:hover,:active,:focus){--background-color: var(--secondary-hover);--border-color: var(--secondary-hover);--color: var(--secondary-inverse)}:is(button,input[type=submit],input[type=button],[role=button]).secondary:focus,input[type=reset]:focus{--box-shadow: var(--button-hover-box-shadow, 0 0 0 rgba(0, 0, 0, 0)), 0 0 0 var(--outline-width) var(--secondary-focus)}:is(button,input[type=submit],input[type=button],[role=button]).contrast{--background-color: var(--contrast);--border-color: var(--contrast);--color: var(--contrast-inverse)}:is(button,input[type=submit],input[type=button],[role=button]).contrast:is([aria-current],:hover,:active,:focus){--background-color: var(--contrast-hover);--border-color: var(--contrast-hover);--color: var(--contrast-inverse)}:is(button,input[type=submit],input[type=button],[role=button]).contrast:focus{--box-shadow: var(--button-hover-box-shadow, 0 0 0 rgba(0, 0, 0, 0)), 0 0 0 var(--outline-width) var(--contrast-focus)}:is(button,input[type=submit],input[type=button],[role=button]).outline,input[type=reset].outline{--background-color: transparent;--color: var(--primary)}:is(button,input[type=submit],input[type=button],[role=button]).outline:is([aria-current],:hover,:active,:focus),input[type=reset].outline:is([aria-current],:hover,:active,:focus){--background-color: transparent;--color: var(--primary-hover)}:is(button,input[type=submit],input[type=button],[role=button]).outline.secondary,input[type=reset].outline{--color: var(--secondary)}:is(button,input[type=submit],input[type=button],[role=button]).outline.secondary:is([aria-current],:hover,:active,:focus),input[type=reset].outline:is([aria-current],:hover,:active,:focus){--color: var(--secondary-hover)}:is(button,input[type=submit],input[type=button],[role=button]).outline.contrast{--color: var(--contrast)}:is(button,input[type=submit],input[type=button],[role=button]).outline.contrast:is([aria-current],:hover,:active,:focus){--color: var(--contrast-hover)}:where(button,[type=submit],[type=button],[type=reset],[role=button])[disabled],:where(fieldset[disabled]) :is(button,[type=submit],[type=button],[type=reset],[role=button]),a[role=button]:not([href]){opacity:.5;pointer-events:none}input,optgroup,select,textarea{margin:0;font-size:1rem;line-height:var(--line-height);font-family:inherit;letter-spacing:inherit}input{overflow:visible}select{text-transform:none}legend{max-width:100%;padding:0;color:inherit;white-space:normal}textarea{overflow:auto}[type=checkbox],[type=radio]{padding:0}::-webkit-inner-spin-button,::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}::-moz-focus-inner{padding:0;border-style:none}:-moz-focusring{outline:none}:-moz-ui-invalid{box-shadow:none}::-ms-expand{display:none}[type=file],[type=range]{padding:0;border-width:0}input:not([type=checkbox],[type=radio],[type=range]){height:calc(1rem * var(--line-height) + var(--form-element-spacing-vertical) * 2 + var(--border-width) * 2)}fieldset{margin:0;margin-bottom:var(--spacing);padding:0;border:0}label,fieldset legend{display:block;margin-bottom:calc(var(--spacing) * .25);font-weight:var(--form-label-font-weight, var(--font-weight))}input:not([type=checkbox],[type=radio]),select,textarea{width:100%}input:not([type=checkbox],[type=radio],[type=range],[type=file]),select,textarea{-webkit-appearance:none;-moz-appearance:none;appearance:none;padding:var(--form-element-spacing-vertical) var(--form-element-spacing-horizontal)}input,select,textarea{--background-color: var(--form-element-background-color);--border-color: var(--form-element-border-color);--color: var(--form-element-color);--box-shadow: none;border:var(--border-width) solid var(--border-color);border-radius:var(--border-radius);outline:none;background-color:var(--background-color);box-shadow:var(--box-shadow);color:var(--color);font-weight:var(--font-weight);transition:background-color var(--transition),border-color var(--transition),color var(--transition),box-shadow var(--transition)}input:not([type=submit],[type=button],[type=reset],[type=checkbox],[type=radio],[readonly]):is(:active,:focus),:where(select,textarea):is(:active,:focus){--background-color: var(--form-element-active-background-color)}input:not([type=submit],[type=button],[type=reset],[role=switch],[readonly]):is(:active,:focus),:where(select,textarea):is(:active,:focus){--border-color: var(--form-element-active-border-color)}input:not([type=submit],[type=button],[type=reset],[type=range],[type=file],[readonly]):focus,select:focus,textarea:focus{--box-shadow: 0 0 0 var(--outline-width) var(--form-element-focus-color)}input:not([type=submit],[type=button],[type=reset])[disabled],select[disabled],textarea[disabled],:where(fieldset[disabled]) :is(input:not([type=submit],[type=button],[type=reset]),select,textarea){--background-color: var(--form-element-disabled-background-color);--border-color: var(--form-element-disabled-border-color);opacity:var(--form-element-disabled-opacity);pointer-events:none}:where(input,select,textarea):not([type=checkbox],[type=radio])[aria-invalid]{padding-right:calc(var(--form-element-spacing-horizontal) + 1.5rem)!important;padding-left:var(--form-element-spacing-horizontal);-webkit-padding-start:var(--form-element-spacing-horizontal)!important;padding-inline-start:var(--form-element-spacing-horizontal)!important;-webkit-padding-end:calc(var(--form-element-spacing-horizontal) + 1.5rem)!important;padding-inline-end:calc(var(--form-element-spacing-horizontal) + 1.5rem)!important;background-position:center right .75rem;background-size:1rem auto;background-repeat:no-repeat}:where(input,select,textarea):not([type=checkbox],[type=radio])[aria-invalid=false]{background-image:var(--icon-valid)}:where(input,select,textarea):not([type=checkbox],[type=radio])[aria-invalid=true]{background-image:var(--icon-invalid)}:where(input,select,textarea)[aria-invalid=false]{--border-color: var(--form-element-valid-border-color)}:where(input,select,textarea)[aria-invalid=false]:is(:active,:focus){--border-color: var(--form-element-valid-active-border-color) !important;--box-shadow: 0 0 0 var(--outline-width) var(--form-element-valid-focus-color) !important}:where(input,select,textarea)[aria-invalid=true]{--border-color: var(--form-element-invalid-border-color)}:where(input,select,textarea)[aria-invalid=true]:is(:active,:focus){--border-color: var(--form-element-invalid-active-border-color) !important;--box-shadow: 0 0 0 var(--outline-width) var(--form-element-invalid-focus-color) !important}[dir=rtl] :where(input,select,textarea):not([type=checkbox],[type=radio]):is([aria-invalid],[aria-invalid=true],[aria-invalid=false]){background-position:center left .75rem}input::placeholder,input::-webkit-input-placeholder,textarea::placeholder,textarea::-webkit-input-placeholder,select:invalid{color:var(--form-element-placeholder-color);opacity:1}input:not([type=checkbox],[type=radio]),select,textarea{margin-bottom:var(--spacing)}select::-ms-expand{border:0;background-color:transparent}select:not([multiple],[size]){padding-right:calc(var(--form-element-spacing-horizontal) + 1.5rem);padding-left:var(--form-element-spacing-horizontal);-webkit-padding-start:var(--form-element-spacing-horizontal);padding-inline-start:var(--form-element-spacing-horizontal);-webkit-padding-end:calc(var(--form-element-spacing-horizontal) + 1.5rem);padding-inline-end:calc(var(--form-element-spacing-horizontal) + 1.5rem);background-image:var(--icon-chevron);background-position:center right .75rem;background-size:1rem auto;background-repeat:no-repeat}[dir=rtl] select:not([multiple],[size]){background-position:center left .75rem}:where(input,select,textarea)+small{display:block;width:100%;margin-top:calc(var(--spacing) * -.75);margin-bottom:var(--spacing);color:var(--muted-color)}label>:where(input,select,textarea){margin-top:calc(var(--spacing) * .25)}[type=checkbox],[type=radio]{-webkit-appearance:none;-moz-appearance:none;appearance:none;width:1.25em;height:1.25em;margin-top:-.125em;margin-right:.375em;margin-left:0;-webkit-margin-start:0;margin-inline-start:0;-webkit-margin-end:.375em;margin-inline-end:.375em;border-width:var(--border-width);font-size:inherit;vertical-align:middle;cursor:pointer}[type=checkbox]::-ms-check,[type=radio]::-ms-check{display:none}[type=checkbox]:checked,[type=checkbox]:checked:active,[type=checkbox]:checked:focus,[type=radio]:checked,[type=radio]:checked:active,[type=radio]:checked:focus{--background-color: var(--primary);--border-color: var(--primary);background-image:var(--icon-checkbox);background-position:center;background-size:.75em auto;background-repeat:no-repeat}[type=checkbox]~label,[type=radio]~label{display:inline-block;margin-right:.375em;margin-bottom:0;cursor:pointer}[type=checkbox]:indeterminate{--background-color: var(--primary);--border-color: var(--primary);background-image:var(--icon-minus);background-position:center;background-size:.75em auto;background-repeat:no-repeat}[type=radio]{border-radius:50%}[type=radio]:checked,[type=radio]:checked:active,[type=radio]:checked:focus{--background-color: var(--primary-inverse);border-width:.35em;background-image:none}[type=checkbox][role=switch]{--background-color: var(--switch-background-color);--border-color: var(--switch-background-color);--color: var(--switch-color);width:2.25em;height:1.25em;border:var(--border-width) solid var(--border-color);border-radius:1.25em;background-color:var(--background-color);line-height:1.25em}[type=checkbox][role=switch]:focus{--background-color: var(--switch-background-color);--border-color: var(--switch-background-color)}[type=checkbox][role=switch]:checked{--background-color: var(--switch-checked-background-color);--border-color: var(--switch-checked-background-color)}[type=checkbox][role=switch]:before{display:block;width:calc(1.25em - (var(--border-width) * 2));height:100%;border-radius:50%;background-color:var(--color);content:"";transition:margin .1s ease-in-out}[type=checkbox][role=switch]:checked{background-image:none}[type=checkbox][role=switch]:checked:before{margin-left:calc(1.125em - var(--border-width));-webkit-margin-start:calc(1.125em - var(--border-width));margin-inline-start:calc(1.125em - var(--border-width))}[type=checkbox][aria-invalid=false],[type=checkbox]:checked[aria-invalid=false],[type=radio][aria-invalid=false],[type=radio]:checked[aria-invalid=false],[type=checkbox][role=switch][aria-invalid=false],[type=checkbox][role=switch]:checked[aria-invalid=false]{--border-color: var(--form-element-valid-border-color)}[type=checkbox][aria-invalid=true],[type=checkbox]:checked[aria-invalid=true],[type=radio][aria-invalid=true],[type=radio]:checked[aria-invalid=true],[type=checkbox][role=switch][aria-invalid=true],[type=checkbox][role=switch]:checked[aria-invalid=true]{--border-color: var(--form-element-invalid-border-color)}[type=color]::-webkit-color-swatch-wrapper{padding:0}[type=color]::-moz-focus-inner{padding:0}[type=color]::-webkit-color-swatch{border:0;border-radius:calc(var(--border-radius) * .5)}[type=color]::-moz-color-swatch{border:0;border-radius:calc(var(--border-radius) * .5)}input:not([type=checkbox],[type=radio],[type=range],[type=file]):is([type=date],[type=datetime-local],[type=month],[type=time],[type=week]){--icon-position: .75rem;--icon-width: 1rem;padding-right:calc(var(--icon-width) + var(--icon-position));background-image:var(--icon-date);background-position:center right var(--icon-position);background-size:var(--icon-width) auto;background-repeat:no-repeat}input:not([type=checkbox],[type=radio],[type=range],[type=file])[type=time]{background-image:var(--icon-time)}[type=date]::-webkit-calendar-picker-indicator,[type=datetime-local]::-webkit-calendar-picker-indicator,[type=month]::-webkit-calendar-picker-indicator,[type=time]::-webkit-calendar-picker-indicator,[type=week]::-webkit-calendar-picker-indicator{width:var(--icon-width);margin-right:calc(var(--icon-width) * -1);margin-left:var(--icon-position);opacity:0}[dir=rtl] :is([type=date],[type=datetime-local],[type=month],[type=time],[type=week]){text-align:right}[type=file]{--color: var(--muted-color);padding:calc(var(--form-element-spacing-vertical) * .5) 0;border:0;border-radius:0;background:none}[type=file]::file-selector-button{--background-color: var(--secondary);--border-color: var(--secondary);--color: var(--secondary-inverse);margin-right:calc(var(--spacing) / 2);margin-left:0;-webkit-margin-start:0;margin-inline-start:0;-webkit-margin-end:calc(var(--spacing) / 2);margin-inline-end:calc(var(--spacing) / 2);padding:calc(var(--form-element-spacing-vertical) * .5) calc(var(--form-element-spacing-horizontal) * .5);border:var(--border-width) solid var(--border-color);border-radius:var(--border-radius);outline:none;background-color:var(--background-color);box-shadow:var(--box-shadow);color:var(--color);font-weight:var(--font-weight);font-size:1rem;line-height:var(--line-height);text-align:center;cursor:pointer;transition:background-color var(--transition),border-color var(--transition),color var(--transition),box-shadow var(--transition)}[type=file]::file-selector-button:is(:hover,:active,:focus){--background-color: var(--secondary-hover);--border-color: var(--secondary-hover)}[type=file]::-webkit-file-upload-button{--background-color: var(--secondary);--border-color: var(--secondary);--color: var(--secondary-inverse);margin-right:calc(var(--spacing) / 2);margin-left:0;-webkit-margin-start:0;margin-inline-start:0;-webkit-margin-end:calc(var(--spacing) / 2);margin-inline-end:calc(var(--spacing) / 2);padding:calc(var(--form-element-spacing-vertical) * .5) calc(var(--form-element-spacing-horizontal) * .5);border:var(--border-width) solid var(--border-color);border-radius:var(--border-radius);outline:none;background-color:var(--background-color);box-shadow:var(--box-shadow);color:var(--color);font-weight:var(--font-weight);font-size:1rem;line-height:var(--line-height);text-align:center;cursor:pointer;-webkit-transition:background-color var(--transition),border-color var(--transition),color var(--transition),box-shadow var(--transition);transition:background-color var(--transition),border-color var(--transition),color var(--transition),box-shadow var(--transition)}[type=file]::-webkit-file-upload-button:is(:hover,:active,:focus){--background-color: var(--secondary-hover);--border-color: var(--secondary-hover)}[type=file]::-ms-browse{--background-color: var(--secondary);--border-color: var(--secondary);--color: var(--secondary-inverse);margin-right:calc(var(--spacing) / 2);margin-left:0;margin-inline-start:0;margin-inline-end:calc(var(--spacing) / 2);padding:calc(var(--form-element-spacing-vertical) * .5) calc(var(--form-element-spacing-horizontal) * .5);border:var(--border-width) solid var(--border-color);border-radius:var(--border-radius);outline:none;background-color:var(--background-color);box-shadow:var(--box-shadow);color:var(--color);font-weight:var(--font-weight);font-size:1rem;line-height:var(--line-height);text-align:center;cursor:pointer;-ms-transition:background-color var(--transition),border-color var(--transition),color var(--transition),box-shadow var(--transition);transition:background-color var(--transition),border-color var(--transition),color var(--transition),box-shadow var(--transition)}[type=file]::-ms-browse:is(:hover,:active,:focus){--background-color: var(--secondary-hover);--border-color: var(--secondary-hover)}[type=range]{-webkit-appearance:none;-moz-appearance:none;appearance:none;width:100%;height:1.25rem;background:none}[type=range]::-webkit-slider-runnable-track{width:100%;height:.25rem;border-radius:var(--border-radius);background-color:var(--range-border-color);-webkit-transition:background-color var(--transition),box-shadow var(--transition);transition:background-color var(--transition),box-shadow var(--transition)}[type=range]::-moz-range-track{width:100%;height:.25rem;border-radius:var(--border-radius);background-color:var(--range-border-color);-moz-transition:background-color var(--transition),box-shadow var(--transition);transition:background-color var(--transition),box-shadow var(--transition)}[type=range]::-ms-track{width:100%;height:.25rem;border-radius:var(--border-radius);background-color:var(--range-border-color);-ms-transition:background-color var(--transition),box-shadow var(--transition);transition:background-color var(--transition),box-shadow var(--transition)}[type=range]::-webkit-slider-thumb{-webkit-appearance:none;width:1.25rem;height:1.25rem;margin-top:-.5rem;border:2px solid var(--range-thumb-border-color);border-radius:50%;background-color:var(--range-thumb-color);cursor:pointer;-webkit-transition:background-color var(--transition),transform var(--transition);transition:background-color var(--transition),transform var(--transition)}[type=range]::-moz-range-thumb{-webkit-appearance:none;width:1.25rem;height:1.25rem;margin-top:-.5rem;border:2px solid var(--range-thumb-border-color);border-radius:50%;background-color:var(--range-thumb-color);cursor:pointer;-moz-transition:background-color var(--transition),transform var(--transition);transition:background-color var(--transition),transform var(--transition)}[type=range]::-ms-thumb{-webkit-appearance:none;width:1.25rem;height:1.25rem;margin-top:-.5rem;border:2px solid var(--range-thumb-border-color);border-radius:50%;background-color:var(--range-thumb-color);cursor:pointer;-ms-transition:background-color var(--transition),transform var(--transition);transition:background-color var(--transition),transform var(--transition)}[type=range]:hover,[type=range]:focus{--range-border-color: var(--range-active-border-color);--range-thumb-color: var(--range-thumb-hover-color)}[type=range]:active{--range-thumb-color: var(--range-thumb-active-color)}[type=range]:active::-webkit-slider-thumb{transform:scale(1.25)}[type=range]:active::-moz-range-thumb{transform:scale(1.25)}[type=range]:active::-ms-thumb{transform:scale(1.25)}input:not([type=checkbox],[type=radio],[type=range],[type=file])[type=search]{-webkit-padding-start:calc(var(--form-element-spacing-horizontal) + 1.75rem);padding-inline-start:calc(var(--form-element-spacing-horizontal) + 1.75rem);border-radius:5rem;background-image:var(--icon-search);background-position:center left 1.125rem;background-size:1rem auto;background-repeat:no-repeat}input:not([type=checkbox],[type=radio],[type=range],[type=file])[type=search][aria-invalid]{-webkit-padding-start:calc(var(--form-element-spacing-horizontal) + 1.75rem)!important;padding-inline-start:calc(var(--form-element-spacing-horizontal) + 1.75rem)!important;background-position:center left 1.125rem,center right .75rem}input:not([type=checkbox],[type=radio],[type=range],[type=file])[type=search][aria-invalid=false]{background-image:var(--icon-search),var(--icon-valid)}input:not([type=checkbox],[type=radio],[type=range],[type=file])[type=search][aria-invalid=true]{background-image:var(--icon-search),var(--icon-invalid)}[type=search]::-webkit-search-cancel-button{-webkit-appearance:none;display:none}[dir=rtl] :where(input):not([type=checkbox],[type=radio],[type=range],[type=file])[type=search]{background-position:center right 1.125rem}[dir=rtl] :where(input):not([type=checkbox],[type=radio],[type=range],[type=file])[type=search][aria-invalid]{background-position:center right 1.125rem,center left .75rem}:where(table){width:100%;border-collapse:collapse;border-spacing:0;text-indent:0}th,td{padding:calc(var(--spacing) / 2) var(--spacing);border-bottom:var(--border-width) solid var(--table-border-color);color:var(--color);font-weight:var(--font-weight);font-size:var(--font-size);text-align:left;text-align:start}tfoot th,tfoot td{border-top:var(--border-width) solid var(--table-border-color);border-bottom:0}table[role=grid] tbody tr:nth-child(odd){background-color:var(--table-row-stripped-background-color)}pre,code,kbd,samp{font-size:.875em;font-family:var(--font-family)}pre{-ms-overflow-style:scrollbar;overflow:auto}pre,code,kbd{border-radius:var(--border-radius);background:var(--code-background-color);color:var(--code-color);font-weight:var(--font-weight);line-height:initial}code,kbd{display:inline-block;padding:.375rem .5rem}pre{display:block;margin-bottom:var(--spacing);overflow-x:auto}pre>code{display:block;padding:var(--spacing);background:none;font-size:14px;line-height:var(--line-height)}code b{color:var(--code-tag-color);font-weight:var(--font-weight)}code i{color:var(--code-property-color);font-style:normal}code u{color:var(--code-value-color);text-decoration:none}code em{color:var(--code-comment-color);font-style:normal}kbd{background-color:var(--code-kbd-background-color);color:var(--code-kbd-color);vertical-align:baseline}hr{height:0;border:0;border-top:1px solid var(--muted-border-color);color:inherit}[hidden],template{display:none!important}canvas{display:inline-block}details{display:block;margin-bottom:var(--spacing);padding-bottom:var(--spacing);border-bottom:var(--border-width) solid var(--accordion-border-color)}details summary{line-height:1rem;list-style-type:none;cursor:pointer;transition:color var(--transition)}details summary:not([role]){color:var(--accordion-close-summary-color)}details summary::-webkit-details-marker{display:none}details summary::marker{display:none}details summary::-moz-list-bullet{list-style-type:none}details summary:after{display:block;width:1rem;height:1rem;-webkit-margin-start:calc(var(--spacing, 1rem) * .5);margin-inline-start:calc(var(--spacing, 1rem) * .5);float:right;transform:rotate(-90deg);background-image:var(--icon-chevron);background-position:right center;background-size:1rem auto;background-repeat:no-repeat;content:"";transition:transform var(--transition)}details summary:focus{outline:none}details summary:focus:not([role=button]){color:var(--accordion-active-summary-color)}details summary[role=button]{width:100%;text-align:left}details summary[role=button]:after{height:calc(1rem * var(--line-height, 1.5));background-image:var(--icon-chevron-button)}details summary[role=button]:not(.outline).contrast:after{background-image:var(--icon-chevron-button-inverse)}details[open]>summary{margin-bottom:calc(var(--spacing))}details[open]>summary:not([role]):not(:focus){color:var(--accordion-open-summary-color)}details[open]>summary:after{transform:rotate(0)}[dir=rtl] details summary{text-align:right}[dir=rtl] details summary:after{float:left;background-position:left center}article{margin:var(--block-spacing-vertical) 0;padding:var(--block-spacing-vertical) var(--block-spacing-horizontal);border-radius:var(--border-radius);background:var(--card-background-color);box-shadow:var(--card-box-shadow)}article>header,article>footer{margin-right:calc(var(--block-spacing-horizontal) * -1);margin-left:calc(var(--block-spacing-horizontal) * -1);padding:calc(var(--block-spacing-vertical) * .66) var(--block-spacing-horizontal);background-color:var(--card-sectionning-background-color)}article>header{margin-top:calc(var(--block-spacing-vertical) * -1);margin-bottom:var(--block-spacing-vertical);border-bottom:var(--border-width) solid var(--card-border-color);border-top-right-radius:var(--border-radius);border-top-left-radius:var(--border-radius)}article>footer{margin-top:var(--block-spacing-vertical);margin-bottom:calc(var(--block-spacing-vertical) * -1);border-top:var(--border-width) solid var(--card-border-color);border-bottom-right-radius:var(--border-radius);border-bottom-left-radius:var(--border-radius)}:root{--scrollbar-width: 0px}dialog{display:flex;z-index:999;position:fixed;top:0;right:0;bottom:0;left:0;align-items:center;justify-content:center;width:inherit;min-width:100%;height:inherit;min-height:100%;padding:var(--spacing);border:0;-webkit-backdrop-filter:var(--modal-overlay-backdrop-filter);backdrop-filter:var(--modal-overlay-backdrop-filter);background-color:var(--modal-overlay-background-color);color:var(--color)}dialog article{max-height:calc(100vh - var(--spacing) * 2);overflow:auto}@media (min-width: 576px){dialog article{max-width:510px}}@media (min-width: 768px){dialog article{max-width:700px}}dialog article>header,dialog article>footer{padding:calc(var(--block-spacing-vertical) * .5) var(--block-spacing-horizontal)}dialog article>header .close{margin:0;margin-left:var(--spacing);float:right}dialog article>footer{text-align:right}dialog article>footer [role=button]{margin-bottom:0}dialog article>footer [role=button]:not(:first-of-type){margin-left:calc(var(--spacing) * .5)}dialog article p:last-of-type{margin:0}dialog article .close{display:block;width:1rem;height:1rem;margin-top:calc(var(--block-spacing-vertical) * -.5);margin-bottom:var(--typography-spacing-vertical);margin-left:auto;background-image:var(--icon-close);background-position:center;background-size:auto 1rem;background-repeat:no-repeat;opacity:.5;transition:opacity var(--transition)}dialog article .close:is([aria-current],:hover,:active,:focus){opacity:1}dialog:not([open]),dialog[open=false]{display:none}.modal-is-open{padding-right:var(--scrollbar-width, 0px);overflow:hidden;pointer-events:none}.modal-is-open dialog{pointer-events:auto}:where(.modal-is-opening,.modal-is-closing) dialog,:where(.modal-is-opening,.modal-is-closing) dialog>article{-webkit-animation-duration:.2s;animation-duration:.2s;-webkit-animation-timing-function:ease-in-out;animation-timing-function:ease-in-out;-webkit-animation-fill-mode:both;animation-fill-mode:both}:where(.modal-is-opening,.modal-is-closing) dialog{-webkit-animation-duration:.8s;animation-duration:.8s;-webkit-animation-name:modal-overlay;animation-name:modal-overlay}:where(.modal-is-opening,.modal-is-closing) dialog>article{-webkit-animation-delay:.2s;animation-delay:.2s;-webkit-animation-name:modal;animation-name:modal}.modal-is-closing dialog,.modal-is-closing dialog>article{-webkit-animation-delay:0s;animation-delay:0s;animation-direction:reverse}@-webkit-keyframes modal-overlay{0%{-webkit-backdrop-filter:none;backdrop-filter:none;background-color:transparent}}@keyframes modal-overlay{0%{-webkit-backdrop-filter:none;backdrop-filter:none;background-color:transparent}}@-webkit-keyframes modal{0%{transform:translateY(-100%);opacity:0}}@keyframes modal{0%{transform:translateY(-100%);opacity:0}}:where(nav li):before{float:left;content:"\200b"}nav,nav ul{display:flex}nav{justify-content:space-between}nav ol,nav ul{align-items:center;margin-bottom:0;padding:0;list-style:none}nav ol:first-of-type,nav ul:first-of-type{margin-left:calc(var(--nav-element-spacing-horizontal) * -1)}nav ol:last-of-type,nav ul:last-of-type{margin-right:calc(var(--nav-element-spacing-horizontal) * -1)}nav li{display:inline-block;margin:0;padding:var(--nav-element-spacing-vertical) var(--nav-element-spacing-horizontal)}nav li>*{--spacing: 0}nav :where(a,[role=link]){display:inline-block;margin:calc(var(--nav-link-spacing-vertical) * -1) calc(var(--nav-link-spacing-horizontal) * -1);padding:var(--nav-link-spacing-vertical) var(--nav-link-spacing-horizontal);border-radius:var(--border-radius);text-decoration:none}nav :where(a,[role=link]):is([aria-current],:hover,:active,:focus){text-decoration:none}nav[aria-label=breadcrumb]{align-items:center;justify-content:start}nav[aria-label=breadcrumb] ul li:not(:first-child){-webkit-margin-start:var(--nav-link-spacing-horizontal);margin-inline-start:var(--nav-link-spacing-horizontal)}nav[aria-label=breadcrumb] ul li:not(:last-child) :after{position:absolute;width:calc(var(--nav-link-spacing-horizontal) * 2);-webkit-margin-start:calc(var(--nav-link-spacing-horizontal) / 2);margin-inline-start:calc(var(--nav-link-spacing-horizontal) / 2);content:"/";color:var(--muted-color);text-align:center}nav[aria-label=breadcrumb] a[aria-current]{background-color:transparent;color:inherit;text-decoration:none;pointer-events:none}nav [role=button]{margin-right:inherit;margin-left:inherit;padding:var(--nav-link-spacing-vertical) var(--nav-link-spacing-horizontal)}aside nav,aside ol,aside ul,aside li{display:block}aside li{padding:calc(var(--nav-element-spacing-vertical) * .5) var(--nav-element-spacing-horizontal)}aside li a{display:block}aside li [role=button]{margin:inherit}[dir=rtl] nav[aria-label=breadcrumb] ul li:not(:last-child) :after{content:"\\"}progress{display:inline-block;vertical-align:baseline}progress{-webkit-appearance:none;-moz-appearance:none;display:inline-block;appearance:none;width:100%;height:.5rem;margin-bottom:calc(var(--spacing) * .5);overflow:hidden;border:0;border-radius:var(--border-radius);background-color:var(--progress-background-color);color:var(--progress-color)}progress::-webkit-progress-bar{border-radius:var(--border-radius);background:none}progress[value]::-webkit-progress-value{background-color:var(--progress-color)}progress::-moz-progress-bar{background-color:var(--progress-color)}@media (prefers-reduced-motion: no-preference){progress:indeterminate{background:var(--progress-background-color) linear-gradient(to right,var(--progress-color) 30%,var(--progress-background-color) 30%) top left/150% 150% no-repeat;-webkit-animation:progress-indeterminate 1s linear infinite;animation:progress-indeterminate 1s linear infinite}progress:indeterminate[value]::-webkit-progress-value{background-color:transparent}progress:indeterminate::-moz-progress-bar{background-color:transparent}}@media (prefers-reduced-motion: no-preference){[dir=rtl] progress:indeterminate{animation-direction:reverse}}@-webkit-keyframes progress-indeterminate{0%{background-position:200% 0}to{background-position:-200% 0}}@keyframes progress-indeterminate{0%{background-position:200% 0}to{background-position:-200% 0}}details[role=list],li[role=list]{position:relative}details[role=list] summary+ul,li[role=list]>ul{display:flex;z-index:99;position:absolute;top:auto;right:0;left:0;flex-direction:column;margin:0;padding:0;border:var(--border-width) solid var(--dropdown-border-color);border-radius:var(--border-radius);border-top-right-radius:0;border-top-left-radius:0;background-color:var(--dropdown-background-color);box-shadow:var(--card-box-shadow);color:var(--dropdown-color);white-space:nowrap}details[role=list] summary+ul li,li[role=list]>ul li{width:100%;margin-bottom:0;padding:calc(var(--form-element-spacing-vertical) * .5) var(--form-element-spacing-horizontal);list-style:none}details[role=list] summary+ul li:first-of-type,li[role=list]>ul li:first-of-type{margin-top:calc(var(--form-element-spacing-vertical) * .5)}details[role=list] summary+ul li:last-of-type,li[role=list]>ul li:last-of-type{margin-bottom:calc(var(--form-element-spacing-vertical) * .5)}details[role=list] summary+ul li a,li[role=list]>ul li a{display:block;margin:calc(var(--form-element-spacing-vertical) * -.5) calc(var(--form-element-spacing-horizontal) * -1);padding:calc(var(--form-element-spacing-vertical) * .5) var(--form-element-spacing-horizontal);overflow:hidden;color:var(--dropdown-color);text-decoration:none;text-overflow:ellipsis}details[role=list] summary+ul li a:hover,li[role=list]>ul li a:hover{background-color:var(--dropdown-hover-background-color)}details[role=list] summary:after,li[role=list]>a:after{display:block;width:1rem;height:calc(1rem * var(--line-height, 1.5));-webkit-margin-start:.5rem;margin-inline-start:.5rem;float:right;transform:rotate(0);background-position:right center;background-size:1rem auto;background-repeat:no-repeat;content:""}details[role=list]{padding:0;border-bottom:none}details[role=list] summary{margin-bottom:0}details[role=list] summary:not([role]){height:calc(1rem * var(--line-height) + var(--form-element-spacing-vertical) * 2 + var(--border-width) * 2);padding:var(--form-element-spacing-vertical) var(--form-element-spacing-horizontal);border:var(--border-width) solid var(--form-element-border-color);border-radius:var(--border-radius);background-color:var(--form-element-background-color);color:var(--form-element-placeholder-color);line-height:inherit;cursor:pointer;transition:background-color var(--transition),border-color var(--transition),color var(--transition),box-shadow var(--transition)}details[role=list] summary:not([role]):active,details[role=list] summary:not([role]):focus{border-color:var(--form-element-active-border-color);background-color:var(--form-element-active-background-color)}details[role=list] summary:not([role]):focus{box-shadow:0 0 0 var(--outline-width) var(--form-element-focus-color)}details[role=list][open] summary{border-bottom-right-radius:0;border-bottom-left-radius:0}details[role=list][open] summary:before{display:block;z-index:1;position:fixed;top:0;right:0;bottom:0;left:0;background:none;content:"";cursor:default}nav details[role=list] summary,nav li[role=list] a{display:flex;direction:ltr}nav details[role=list] summary+ul,nav li[role=list]>ul{min-width:-webkit-fit-content;min-width:-moz-fit-content;min-width:fit-content;border-radius:var(--border-radius)}nav details[role=list] summary+ul li a,nav li[role=list]>ul li a{border-radius:0}nav details[role=list] summary,nav details[role=list] summary:not([role]){height:auto;padding:var(--nav-link-spacing-vertical) var(--nav-link-spacing-horizontal)}nav details[role=list][open] summary{border-radius:var(--border-radius)}nav details[role=list] summary+ul{margin-top:var(--outline-width);-webkit-margin-start:0;margin-inline-start:0}nav details[role=list] summary[role=link]{margin-bottom:calc(var(--nav-link-spacing-vertical) * -1);line-height:var(--line-height)}nav details[role=list] summary[role=link]+ul{margin-top:calc(var(--nav-link-spacing-vertical) + var(--outline-width));-webkit-margin-start:calc(var(--nav-link-spacing-horizontal) * -1);margin-inline-start:calc(var(--nav-link-spacing-horizontal) * -1)}li[role=list]:hover>ul,li[role=list] a:active~ul,li[role=list] a:focus~ul{display:flex}li[role=list]>ul{display:none;margin-top:calc(var(--nav-link-spacing-vertical) + var(--outline-width));-webkit-margin-start:calc(var(--nav-element-spacing-horizontal) - var(--nav-link-spacing-horizontal));margin-inline-start:calc(var(--nav-element-spacing-horizontal) - var(--nav-link-spacing-horizontal))}li[role=list]>a:after{background-image:var(--icon-chevron)}[aria-busy=true]{cursor:progress}[aria-busy=true]:not(input,select,textarea):before{display:inline-block;width:1em;height:1em;border:.1875em solid currentColor;border-radius:1em;border-right-color:transparent;content:"";vertical-align:text-bottom;vertical-align:-.125em;-webkit-animation:spinner .75s linear infinite;animation:spinner .75s linear infinite;opacity:var(--loading-spinner-opacity)}[aria-busy=true]:not(input,select,textarea):not(:empty):before{margin-right:calc(var(--spacing) * .5);margin-left:0;-webkit-margin-start:0;margin-inline-start:0;-webkit-margin-end:calc(var(--spacing) * .5);margin-inline-end:calc(var(--spacing) * .5)}[aria-busy=true]:not(input,select,textarea):empty{text-align:center}button[aria-busy=true],input[type=submit][aria-busy=true],input[type=button][aria-busy=true],input[type=reset][aria-busy=true],a[aria-busy=true]{pointer-events:none}@-webkit-keyframes spinner{to{transform:rotate(360deg)}}@keyframes spinner{to{transform:rotate(360deg)}}[data-tooltip]{position:relative}[data-tooltip]:not(a,button,input){border-bottom:1px dotted;text-decoration:none;cursor:help}[data-tooltip][data-placement=top]:before,[data-tooltip][data-placement=top]:after,[data-tooltip]:before,[data-tooltip]:after{display:block;z-index:99;position:absolute;bottom:100%;left:50%;padding:.25rem .5rem;overflow:hidden;transform:translate(-50%,-.25rem);border-radius:var(--border-radius);background:var(--tooltip-background-color);content:attr(data-tooltip);color:var(--tooltip-color);font-style:normal;font-weight:var(--font-weight);font-size:.875rem;text-decoration:none;text-overflow:ellipsis;white-space:nowrap;opacity:0;pointer-events:none}[data-tooltip][data-placement=top]:after,[data-tooltip]:after{padding:0;transform:translate(-50%);border-top:.3rem solid;border-right:.3rem solid transparent;border-left:.3rem solid transparent;border-radius:0;background-color:transparent;content:"";color:var(--tooltip-background-color)}[data-tooltip][data-placement=bottom]:before,[data-tooltip][data-placement=bottom]:after{top:100%;bottom:auto;transform:translate(-50%,.25rem)}[data-tooltip][data-placement=bottom]:after{transform:translate(-50%,-.3rem);border:.3rem solid transparent;border-bottom:.3rem solid}[data-tooltip][data-placement=left]:before,[data-tooltip][data-placement=left]:after{top:50%;right:100%;bottom:auto;left:auto;transform:translate(-.25rem,-50%)}[data-tooltip][data-placement=left]:after{transform:translate(.3rem,-50%);border:.3rem solid transparent;border-left:.3rem solid}[data-tooltip][data-placement=right]:before,[data-tooltip][data-placement=right]:after{top:50%;right:auto;bottom:auto;left:100%;transform:translate(.25rem,-50%)}[data-tooltip][data-placement=right]:after{transform:translate(-.3rem,-50%);border:.3rem solid transparent;border-right:.3rem solid}[data-tooltip]:focus:before,[data-tooltip]:focus:after,[data-tooltip]:hover:before,[data-tooltip]:hover:after{opacity:1}@media (hover: hover) and (pointer: fine){[data-tooltip][data-placement=bottom]:focus:before,[data-tooltip][data-placement=bottom]:focus:after,[data-tooltip][data-placement=bottom]:hover [data-tooltip]:focus:before,[data-tooltip][data-placement=bottom]:hover [data-tooltip]:focus:after,[data-tooltip]:hover:before,[data-tooltip]:hover:after{-webkit-animation-duration:.2s;animation-duration:.2s;-webkit-animation-name:tooltip-slide-top;animation-name:tooltip-slide-top}[data-tooltip][data-placement=bottom]:focus:after,[data-tooltip][data-placement=bottom]:hover [data-tooltip]:focus:after,[data-tooltip]:hover:after{-webkit-animation-name:tooltip-caret-slide-top;animation-name:tooltip-caret-slide-top}[data-tooltip][data-placement=bottom]:focus:before,[data-tooltip][data-placement=bottom]:focus:after,[data-tooltip][data-placement=bottom]:hover:before,[data-tooltip][data-placement=bottom]:hover:after{-webkit-animation-duration:.2s;animation-duration:.2s;-webkit-animation-name:tooltip-slide-bottom;animation-name:tooltip-slide-bottom}[data-tooltip][data-placement=bottom]:focus:after,[data-tooltip][data-placement=bottom]:hover:after{-webkit-animation-name:tooltip-caret-slide-bottom;animation-name:tooltip-caret-slide-bottom}[data-tooltip][data-placement=left]:focus:before,[data-tooltip][data-placement=left]:focus:after,[data-tooltip][data-placement=left]:hover:before,[data-tooltip][data-placement=left]:hover:after{-webkit-animation-duration:.2s;animation-duration:.2s;-webkit-animation-name:tooltip-slide-left;animation-name:tooltip-slide-left}[data-tooltip][data-placement=left]:focus:after,[data-tooltip][data-placement=left]:hover:after{-webkit-animation-name:tooltip-caret-slide-left;animation-name:tooltip-caret-slide-left}[data-tooltip][data-placement=right]:focus:before,[data-tooltip][data-placement=right]:focus:after,[data-tooltip][data-placement=right]:hover:before,[data-tooltip][data-placement=right]:hover:after{-webkit-animation-duration:.2s;animation-duration:.2s;-webkit-animation-name:tooltip-slide-right;animation-name:tooltip-slide-right}[data-tooltip][data-placement=right]:focus:after,[data-tooltip][data-placement=right]:hover:after{-webkit-animation-name:tooltip-caret-slide-right;animation-name:tooltip-caret-slide-right}}@-webkit-keyframes tooltip-slide-top{0%{transform:translate(-50%,.75rem);opacity:0}to{transform:translate(-50%,-.25rem);opacity:1}}@keyframes tooltip-slide-top{0%{transform:translate(-50%,.75rem);opacity:0}to{transform:translate(-50%,-.25rem);opacity:1}}@-webkit-keyframes tooltip-caret-slide-top{0%{opacity:0}50%{transform:translate(-50%,-.25rem);opacity:0}to{transform:translate(-50%);opacity:1}}@keyframes tooltip-caret-slide-top{0%{opacity:0}50%{transform:translate(-50%,-.25rem);opacity:0}to{transform:translate(-50%);opacity:1}}@-webkit-keyframes tooltip-slide-bottom{0%{transform:translate(-50%,-.75rem);opacity:0}to{transform:translate(-50%,.25rem);opacity:1}}@keyframes tooltip-slide-bottom{0%{transform:translate(-50%,-.75rem);opacity:0}to{transform:translate(-50%,.25rem);opacity:1}}@-webkit-keyframes tooltip-caret-slide-bottom{0%{opacity:0}50%{transform:translate(-50%,-.5rem);opacity:0}to{transform:translate(-50%,-.3rem);opacity:1}}@keyframes tooltip-caret-slide-bottom{0%{opacity:0}50%{transform:translate(-50%,-.5rem);opacity:0}to{transform:translate(-50%,-.3rem);opacity:1}}@-webkit-keyframes tooltip-slide-left{0%{transform:translate(.75rem,-50%);opacity:0}to{transform:translate(-.25rem,-50%);opacity:1}}@keyframes tooltip-slide-left{0%{transform:translate(.75rem,-50%);opacity:0}to{transform:translate(-.25rem,-50%);opacity:1}}@-webkit-keyframes tooltip-caret-slide-left{0%{opacity:0}50%{transform:translate(.05rem,-50%);opacity:0}to{transform:translate(.3rem,-50%);opacity:1}}@keyframes tooltip-caret-slide-left{0%{opacity:0}50%{transform:translate(.05rem,-50%);opacity:0}to{transform:translate(.3rem,-50%);opacity:1}}@-webkit-keyframes tooltip-slide-right{0%{transform:translate(-.75rem,-50%);opacity:0}to{transform:translate(.25rem,-50%);opacity:1}}@keyframes tooltip-slide-right{0%{transform:translate(-.75rem,-50%);opacity:0}to{transform:translate(.25rem,-50%);opacity:1}}@-webkit-keyframes tooltip-caret-slide-right{0%{opacity:0}50%{transform:translate(-.05rem,-50%);opacity:0}to{transform:translate(-.3rem,-50%);opacity:1}}@keyframes tooltip-caret-slide-right{0%{opacity:0}50%{transform:translate(-.05rem,-50%);opacity:0}to{transform:translate(-.3rem,-50%);opacity:1}}[aria-controls]{cursor:pointer}[aria-disabled=true],[disabled]{cursor:not-allowed}[aria-hidden=false][hidden]{display:initial}[aria-hidden=false][hidden]:not(:focus){clip:rect(0,0,0,0);position:absolute}a,area,button,input,label,select,summary,textarea,[tabindex]{-ms-touch-action:manipulation}[dir=rtl]{direction:rtl}@media (prefers-reduced-motion: reduce){*:not([aria-busy=true]),:not([aria-busy=true]):before,:not([aria-busy=true]):after{background-attachment:initial!important;-webkit-animation-duration:1ms!important;animation-duration:1ms!important;-webkit-animation-delay:-1ms!important;animation-delay:-1ms!important;-webkit-animation-iteration-count:1!important;animation-iteration-count:1!important;scroll-behavior:auto!important;transition-delay:0s!important;transition-duration:0s!important}}:root{scroll-behavior:smooth;overflow-y:scroll}#app{padding-bottom:1rem;transition:opacity .5s}.head{display:flex;justify-content:space-between}#button-themen{width:2.5rem;height:2.5rem;min-width:2.5rem;min-height:2.5rem;border-radius:50%;padding:.6rem 0;display:flex;justify-content:center;margin-top:.5rem;margin-left:1rem}.button-themen-svg{height:100%;width:auto;display:block}.grid{margin-bottom:2rem}.image{margin-top:1rem;border-radius:.5rem;overflow:hidden}@media (min-width: 576px){.image{padding:0}}@media (min-width: 768px){.image{padding:0 2rem}}@media (min-width: 992px){.image{margin-top:0;padding:0}}@media (min-width: 1200px){.image{margin-top:0;padding:0}}
+
+</style>
+</head>
+
+<body>
+  <div id="app" class="container" style="opacity: 0;">
+    <div class="head">
+      <div class="headings">
+        <h1><span style="color: #1095c1;">Kaa</span>nalysis: The Second Encounter</h1>
+        <h2>
+          Written by <a href="https://twitter.com/twanandersen" target="_blank">Twan Andersen</a>
+          &#128900;
+          Presented by <a href="https://twitter.com/tarolewd" target="_blank">Taro</a>
+        </h2>
+      </div>
+      <div id="button-themen" role="button">
+        <svg class="button-themen-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+          <path
+            d="M448 256c0-106-86-192-192-192V448c106 0 192-86 192-192zm64 0c0 141.4-114.6 256-256 256S0 397.4 0 256S114.6 0 256 0S512 114.6 512 256z" />
+        </svg>
+      </div>
+    </div>
+
+    <div class="grid">
+      <div class="text">
+        After having failed to feast on the man-cub that fateful night, Kaa had retreated to a different tree, having
+        managed to undo the knot in his tail with some difficulty.
+        
+        He hadn't stopped thinking about the succulent boy and their encounter for a single moment, though.
+      </div>
+      <div class="image"><img src="https://pbs.twimg.com/media/FkW9oCVWQAEoAEH.jpg"></div>
+    </div>
+    <div class="grid">
+      <div class="text">
+        It should have all been so easy: he would have sung that boy to go to sleep while wrapping him up in his coils,
+        feasted on his slumbering body, and retreated to the upper branches to be wrapped in the coils of sleep himself
+        while his stomach took care of the rest. </div>
+      <div class="image"><img src="https://pbs.twimg.com/media/FkW9oM2XEBQ8yT3.jpg"></div>
+    </div>
+    <div class="grid">
+      <div class="text">
+        But his pride had been his downfall </div>
+      <div class="image"><img src="https://pbs.twimg.com/media/FkW9oZYX0AIYDy8.jpg"></div>
+    </div>
+    <div class="grid">
+      <div class="text">
+        Looking back on his mistake, Kaa regretted having taunted Bagheera, gloating about the boy's capture. 
+        
+        The panther wouldn't have woken up until the next morning, at which point it would have been too late to do
+        anything whether he found out Kaa had eaten the boy or not.
+      </div>
+      <div class="image"><img src="https://pbs.twimg.com/media/FkW9okPXEAkpQ8b.jpg"></div>
+    </div>
+    <div class="grid">
+      <div class="text">
+        And Kaa wanted to believe the boy had likely not forgotten about him, either, with his hypnotic rings of colour
+        showing up in his dreams, wishing he was sleeping in his cocoon of coils once more... </div>
+      <div class="image"><img src="https://pbs.twimg.com/media/FkW9oxqXEAgiyB0.jpg"></div>
+    </div>
+    <div class="grid">
+      <div class="text">
+        But, sadly, the python was positive he would never cross paths with that delicious man-cub again. He'd likely
+        dream of their encounter once in a while, but eventually forget him.
+        
+        Kaa was sure the man-cub had most certainly reached the man-village by now...
+      </div>
+      <div class="image"><img src="https://pbs.twimg.com/media/FkW9o8qXEBgqj_G.jpg"></div>
+    </div>
+    <div class="grid">
+      <div class="text">
+        That is, until he picked up a familiar scent. </div>
+      <div class="image"><img src="https://pbs.twimg.com/media/FkW9pKeXEAQF6T4.jpg"></div>
+    </div>
+    <div class="grid">
+      <div class="text">
+        Kaa peaked down from above, confirming that it was indeed that same very man-cub he had been just reminiscing
+        about! </div>
+      <div class="image"><img src="https://pbs.twimg.com/media/FkW9pWEXEAsIV1x.jpg"></div>
+    </div>
+    <div class="grid">
+      <div class="text">
+        What luck, he was all alone!
+        
+        And about to sit down at the base of his tree, no less. This was definitely his lucky day!
+      </div>
+      <div class="image"><img src="https://pbs.twimg.com/media/FkW9phlXEBo0VsK.jpg"></div>
+    </div>
+    <div class="grid">
+      <div class="text">
+        The poor thing looked so sad, making the python worry about what could have happened for him to be in such a
+        desolate mood... </div>
+      <div class="image"><img src="https://pbs.twimg.com/media/FkW9ptcXEAEUfJB.jpg"></div>
+    </div>
+    <div class="grid">
+      <div class="text">
+        Well, no matter. 
+        
+        Soon he will be grinning from ear to ear again.
+      </div>
+      <div class="image"><img src="https://pbs.twimg.com/media/FkW9p5ZXEBEvC_M.jpg"></div>
+    </div>
+    <div class="grid">
+      <div class="text">
+        Kaa had already been preparing his tail to snatch the man-cub off the ground by wrapping around him in a fell
+        swoop, but seeing him sit down at the base of the tree, he got a much better idea. </div>
+      <div class="image"><img src="https://pbs.twimg.com/media/FkW9qFkXEAsQght.jpg"></div>
+    </div>
+    <div class="grid">
+      <div class="text">
+        Instead, he curves the tip as he lowers it, intending to capture the man-cub in a different way. </div>
+      <div class="image"><img src="https://pbs.twimg.com/media/FkW9qSBXEAgl13L.jpg"></div>
+    </div>
+    <div class="grid">
+      <div class="text">
+        Knowing the boy is likely too consumed by his sour mood to be aware of his surroundings, he snakes his tail
+        under his thighs. </div>
+      <div class="image"><img src="https://pbs.twimg.com/media/FkW9qdLXEBIRKT4.jpg"></div>
+    </div>
+    <div class="grid">
+      <div class="text">
+        Picking him up as soon as he forms a coil, lifting him off the ground effortlessly. </div>
+      <div class="image"><img src="https://pbs.twimg.com/media/FkW9qqXWAAArdaM.jpg"></div>
+    </div>
+    <div class="grid">
+      <div class="text">
+        By the time the man-cub can see he's being pulled up, it's already too late.
+        
+        Mowgli doesn't instantly recognise that strange tendril.
+      </div>
+      <div class="image"><img src="https://pbs.twimg.com/media/FkW9q2VXEA4V6Ks.jpg"></div>
+    </div>
+    <div class="grid">
+      <div class="text">
+        After all, the first time he had met Kaa had been during the night, when he had been little more than a
+        serpentine shadow. He has no idea of what the snake truly looks like. </div>
+      <div class="image"><img src="https://pbs.twimg.com/media/FkW9rCOWAAEamDC.jpg"></div>
+    </div>
+    <div class="grid">
+      <div class="text">
+        So, he holds onto Kaa's tail for support, wondering just what is happening. </div>
+      <div class="image"><img src="https://pbs.twimg.com/media/FkW9rOIXEBgO1g8.jpg"></div>
+    </div>
+    <div class="grid">
+      <div class="text">
+        Kaa takes advantage of that, rotating his tail while he keeps lifting the boy up into the highest branches of
+        the tree, where the thick canopy will shield them both from prying eyes and possible rescuing panthers. </div>
+      <div class="image"><img src="https://pbs.twimg.com/media/FkW9rZCXECEA3dU.jpg"></div>
+    </div>
+    <div class="grid">
+      <div class="text">
+        He's already smacking his lips, only able to imagine how succulent that sweet little man-cub will taste. </div>
+      <div class="image"><img src="https://pbs.twimg.com/media/FkW9rj4WIAACd59.jpg"></div>
+    </div>
+    <div class="grid">
+      <div class="text">
+        The poor helpless little thing hadn't even realised yet who those coils belonged to.
+        
+        Thank goodness he had caught him in time. Otherwise, a worse predator could have gotten to him first, and Kaa
+        didn't want any of that.
+      </div>
+      <div class="image"><img src="https://pbs.twimg.com/media/FkW9rvVXEAoikxf.jpg"></div>
+    </div>
+    <div class="grid">
+      <div class="text">
+        However, the python reminds himself that this time things will have to be different.
+        
+        Not only does the man-cub know who he is, he is also very likely aware of his abilities... and the effect they
+        had had in him.
+      </div>
+      <div class="image"><img src="https://pbs.twimg.com/media/FkW9r5kXEAQMRQy.jpg"></div>
+    </div>
+    <div class="grid">
+      <div class="text">
+        The last thing that had crossed Mowgli's mind was that he would end up meeting with Kaa once more, but there he
+        was, all alone with the python, high above the ground, sitting on his tail, which was starting to encircle his
+        belly. </div>
+      <div class="image"><img src="https://pbs.twimg.com/media/FkW9sD6XwAAQfrR.jpg"></div>
+    </div>
+    <div class="grid">
+      <div class="text">
+        After that night, Bagheera had told him all about the python, and how dangerous of a predator he was.
+        
+        Mowgli was now perfectly aware of it, seeing how easily Kaa had captured and isolated him from the rest of the
+        jungle. He immediately tries to escape.
+      </div>
+      <div class="image"><img src="https://pbs.twimg.com/media/FkW9sQYXEBkC1L1.jpg"></div>
+    </div>
+    <div class="grid">
+      <div class="text">
+        Meanwhile, Kaa is simply admiring how adorable the man-cub looks trying to free himself, still thinking he has a
+        chance.
+        
+        He can't help but feel like this was fate bringing them back together, to set right what once had been wrong.
+      </div>
+      <div class="image"><img src="https://pbs.twimg.com/media/FkW9sgYXEAkAIIf.jpg"></div>
+    </div>
+    <div class="grid">
+      <div class="text">
+        He sees that the boy has learned a thing or two from their last encounter, his first thought being to free
+        himself from his scaly makeshift seat.
+        
+        Oh well, not that it will change the outcome in any way.
+      </div>
+      <div class="image"><img src="https://pbs.twimg.com/media/FkW9sq3XEBolnVA.jpg"></div>
+    </div>
+    <div class="grid">
+      <div class="text">
+        Kaa is always up for a challenge, the cogs turning in his mind as he wonders how he's going to ensnare the boy.
+      </div>
+      <div class="image"><img src="https://pbs.twimg.com/media/FkW9s2OXEAoXizs.jpg"></div>
+    </div>
+    <div class="grid">
+      <div class="text">
+        With him and the man-cub all alone in the safety of his tree, he wants to take his time enjoying playing with
+        his food. </div>
+      <div class="image"><img src="https://pbs.twimg.com/media/FkW9tCpXEBcPgvJ.jpg"></div>
+    </div>
+    <div class="grid">
+      <div class="text">
+        Just like in their first encounter, Kaa starts by playing coy, always the polite snake, telling Mowgli how nice
+        it is to see him again. </div>
+      <div class="image"><img src="https://pbs.twimg.com/media/FkW9tNEXEAMaeff.jpg"></div>
+    </div>
+    <div class="grid">
+      <div class="text">
+        Thinking about it, while the boy now knows his name, Kaa had never bothered to learn his. </div>
+      <div class="image"><img src="https://pbs.twimg.com/media/FkW9tYkXEAAh-a8.jpg"></div>
+    </div>
+    <div class="grid">
+      <div class="text">
+        Not that he needs it, considering where the he is going to end up. </div>
+      <div class="image"><img src="https://pbs.twimg.com/media/FkW9tlYXoAEzqcf.jpg"></div>
+    </div>
+    <div class="grid">
+      <div class="text">
+        Kaa can barely contain his predatory glint with how excited he is by that thought. </div>
+      <div class="image"><img src="https://pbs.twimg.com/media/FkW9twPXEBkX_XU.jpg"></div>
+    </div>
+    <div class="grid">
+      <div class="text">
+        Only for his gaze to widen yet again in preparation. </div>
+      <div class="image"><img src="https://pbs.twimg.com/media/FkW9t8EXkAA0kr3.jpg"></div>
+    </div>
+    <div class="grid">
+      <div class="text">
+        Kaa pauses when he sees the man-cub pause his escaping attempt and close one eye, likely remembering he has to
+        be wary of his gaze now. </div>
+      <div class="image"><img src="https://pbs.twimg.com/media/FkW9uHtXEAciSYG.jpg"></div>
+    </div>
+    <div class="grid">
+      <div class="text">
+        Only for the boy to push him away once more with a rough jerk that has him wince and recoil. </div>
+      <div class="image"><img src="https://pbs.twimg.com/media/FkW9uSdXEBQvvbF.jpg"></div>
+    </div>
+    <div class="grid">
+      <div class="text">
+        He hates how rough the boy can be. </div>
+      <div class="image"><img src="https://pbs.twimg.com/media/FkW9udMXEBABJqM.jpg"></div>
+    </div>
+    <div class="grid">
+      <div class="text">
+        But he knows he has to focus and keep up appearances. </div>
+      <div class="image"><img src="https://pbs.twimg.com/media/FkW9upZXEB4Z-iJ.jpg"></div>
+    </div>
+    <div class="grid">
+      <div class="text">
+        So, while allowing the man-cub to free himself from his tail, Kaa circles around him. </div>
+      <div class="image"><img src="https://pbs.twimg.com/media/FkW9u14XwAQM3ic.jpg"></div>
+    </div>
+    <div class="grid">
+      <div class="text">
+        Once again, Mowgli demands for Kaa to go away and leave him alone.
+        
+        But this time, he's so heartbroken that his voice doesn't have that same petulant arrogance in its tone.
+      </div>
+      <div class="image"><img src="https://pbs.twimg.com/media/FkW9vAiWYAAoUe1.jpg"></div>
+    </div>
+    <div class="grid">
+      <div class="text">
+        As Mowgli turns away yet again, Kaa gently asks the man-cub to let him have a look. </div>
+      <div class="image"><img src="https://pbs.twimg.com/media/FkW9vNtXEBE6tf0.jpg"></div>
+    </div>
+    <div class="grid">
+      <div class="text">
+        He even allows Mowgli to push away the length of tail he had draped over his forearm. </div>
+      <div class="image"><img src="https://pbs.twimg.com/media/FkW9vYhXEAMc_fE.jpg"></div>
+    </div>
+    <div class="grid">
+      <div class="text">
+        Kaa had positioned Mowgli in such a way that he was forced to push himself off the coil seat in order to hop
+        off. </div>
+      <div class="image"><img src="https://pbs.twimg.com/media/FkW9vlQXEAwB5zm.jpg"></div>
+    </div>
+    <div class="grid">
+      <div class="text">
+        Giving the python the perfect opening to cast his hypnotic spell. </div>
+      <div class="image"><img src="https://pbs.twimg.com/media/FkW9vx7XEAk4bs6.jpg"></div>
+    </div>
+    <div class="grid">
+      <div class="text">
+        As Kaa's eyes begin to fill with those rings of colour once more, Mowgli's eyes predictably widen in response.
+      </div>
+      <div class="image"><img src="https://pbs.twimg.com/media/FkW9v9yXEBMjsP9.jpg"></div>
+    </div>
+    <div class="grid">
+      <div class="text">
+        Just like in their first encounter, it seemed as if the man-cub was going to stay perfectly still while the
+        python worked his magic... </div>
+      <div class="image"><img src="https://pbs.twimg.com/media/FkW9wIwWYAAasQj.jpg"></div>
+    </div>
+    <div class="grid">
+      <div class="text">
+        However, this time Mowgli knows what happens from looking into Kaa's eyes. 
+        
+        So, he forces his own eyes close and recoils in response.
+      </div>
+      <div class="image"><img src="https://pbs.twimg.com/media/FkW9wUzXEAYhRpO.jpg"></div>
+    </div>
+    <div class="grid">
+      <div class="text">
+        Kaa is somewhat disappointed at first, but lets his eyes return to normal. </div>
+      <div class="image"><img src="https://pbs.twimg.com/media/FkW9wfZWIAABsTj.jpg"></div>
+    </div>
+    <div class="grid">
+      <div class="text">
+        Few had been able to look into his eyes and live to tell the tale, but the python knew that, after waking up
+        from being put under a trance, his prey would crave the colours for a while. </div>
+      <div class="image"><img src="https://pbs.twimg.com/media/FkW9wqkXEB0XwnW.jpg"></div>
+    </div>
+    <div class="grid">
+      <div class="text">
+        While Kaa speaks to the man-cub in a feigned hurt tone to guilt him into opening his eyes, Mowgli confirms that
+        thesis, opening his hands. </div>
+      <div class="image"><img src="https://pbs.twimg.com/media/FkW9w4GXEAwrQn4.jpg"></div>
+    </div>
+    <div class="grid">
+      <div class="text">
+        He knows it was thanks to those rings of colour that the python had managed to somehow make him fall asleep
+        while wrapping him up in his coils. </div>
+      <div class="image"><img src="https://pbs.twimg.com/media/FkW9xC3XkAAu7fQ.jpg"></div>
+    </div>
+    <div class="grid">
+      <div class="text">
+        Seeing them again made him remember just how good it had felt to look at them, like waves of bliss splashing
+        through his whole being.
+        
+        Mowgli feels butterflies in his stomach, his heart racing, his body growing hotter, pleading for just one more
+        look he knows he can't enjoy.
+      </div>
+      <div class="image"><img src="https://pbs.twimg.com/media/FkW9xO2XEAUto4n.jpg"></div>
+    </div>
+    <div class="grid">
+      <div class="text">
+        While he struggles with those conflicting feelings, little is he aware of Kaa's tail sneaking behind him so he
+        can do precisely just that. </div>
+      <div class="image"><img src="https://pbs.twimg.com/media/FkW9xaAXwAAEHow.jpg"></div>
+    </div>
+    <div class="grid">
+      <div class="text">
+        Mowgli is too distracted by his inner struggle to feel those cool scales draping over his head, with Kaa already
+        looking giddy as he prepares a second assault. </div>
+      <div class="image"><img src="https://pbs.twimg.com/media/FkW9xlQXEAYT89S.jpg"></div>
+    </div>
+    <div class="grid">
+      <div class="text">
+        The man-cub's heart freezes as the python's tail tightens around his head, while Kaa tells him to look back at
+        him instead, turning him around.
+        
+        He knows what's about to happen, thinking that just one more look can't hurt...
+      </div>
+      <div class="image"><img src="https://pbs.twimg.com/media/FkW9xvOXEA4sn-V.jpg"></div>
+    </div>
+    <div class="grid">
+      <div class="text">
+        And, surely enough, the rings of colour return. </div>
+      <div class="image"><img src="https://pbs.twimg.com/media/FkW9x5TXEBEVMDK.jpg"></div>
+    </div>
+    <div class="grid">
+      <div class="text">
+        Seeing the boy freeze yet again, those hands uselessly at the sides of his cheeks, makes Kaa smile proudly.
+      </div>
+      <div class="image"><img src="https://pbs.twimg.com/media/FkW9yFDXEB8rVWk.jpg"></div>
+    </div>
+    <div class="grid">
+      <div class="text">
+        Mowgli almost sighs at beholding those endless rings of colour, feling his body relax. </div>
+      <div class="image"><img src="https://pbs.twimg.com/media/FkW9yPeXEAoCQLr.jpg"></div>
+    </div>
+    <div class="grid">
+      <div class="text">
+        Wanting to ensure he snatches the boy properly this time, Kaa even adds a couple of black rings, enforcing his
+        will on the man-cub, whose pupils begin to shrink... </div>
+      <div class="image"><img src="https://pbs.twimg.com/media/FkW9ybMX0AAoJa0.jpg"></div>
+    </div>
+    <div class="grid">
+      <div class="text">
+        But once again, instinct, stubbornness, something makes Mowgli cover his eyes. </div>
+      <div class="image"><img src="https://pbs.twimg.com/media/FkW9ymwXgAA2Pum.jpg"></div>
+    </div>
+    <div class="grid">
+      <div class="text">
+        Kaa wasn't disappointed though. 
+        
+        The boy still resisting was everything he could have asked for and more.
+      </div>
+      <div class="image"><img src="https://pbs.twimg.com/media/FkW9yy4XEAQKUGs.jpg"></div>
+    </div>
+    <div class="grid">
+      <div class="text">
+        But it was time to employ other methods. </div>
+      <div class="image"><img src="https://pbs.twimg.com/media/FkW9y9hWIAEJWxt.jpg"></div>
+    </div>
+    <div class="grid">
+      <div class="text">
+        He can see how irritated the boy is starting to become, and that is no good. </div>
+      <div class="image"><img src="https://pbs.twimg.com/media/FkW9zJIXEA0opIe.jpg"></div>
+    </div>
+    <div class="grid">
+      <div class="text">
+        Mowgli grabs Kaa's tail to free himself from the python's grip, throwing it away. </div>
+      <div class="image"><img src="https://pbs.twimg.com/media/FkW9zUEXEAMUusD.jpg"></div>
+    </div>
+    <div class="grid">
+      <div class="text">
+        Kaa can't help but wonder if the man-cub seriously thinks that pathetic display of strength will do anything.
+      </div>
+      <div class="image"><img src="https://pbs.twimg.com/media/FkW9ziBWIAEDFC7.jpg"></div>
+    </div>
+    <div class="grid">
+      <div class="text">
+        Regardless, his tail moves back in the boy's direction, as if having a mind of its own.
+        
+        If the boy thinks he's going anywhere, he's quite wrong.
+      </div>
+      <div class="image"><img src="https://pbs.twimg.com/media/FkW9zthXEBs8SyK.jpg"></div>
+    </div>
+    <div class="grid">
+      <div class="text">
+        As Mowgli declares he knows what Kaa is trying to do, the python wraps his tail tightly around his wrist, giving
+        him a firm tug. </div>
+      <div class="image"><img src="https://pbs.twimg.com/media/FkW9z6hXEB0zrjr.jpg"></div>
+    </div>
+    <div class="grid">
+      <div class="text">
+        He is shocked at how strong Kaa is despite his demeanor, able to pull his whole weight back with just a simple
+        move.
+        
+        Mowgli realises he had clearly underestimated the python.
+      </div>
+      <div class="image"><img src="https://pbs.twimg.com/media/FkW90G9WQAEyFeS.jpg"></div>
+    </div>
+    <div class="grid">
+      <div class="text">
+        Just as shocked as Kaa is from hearing the man-cub's words, unable to contain himself from quizzing him out
+        loud. </div>
+      <div class="image"><img src="https://pbs.twimg.com/media/FkW90SVWAAAsN7n.jpg"></div>
+    </div>
+    <div class="grid">
+      <div class="text">
+        With how unafraid Mowgli had been around him, Kaa was certain had Bagheera spared him the details of his true
+        intentions in order not to frighten the child.
+        
+        Turns out he was wrong, the boy was simply that foolishly unafraid, still underestimating him!
+      </div>
+      <div class="image"><img src="https://pbs.twimg.com/media/FkW90dCWQAEf6lE.jpg"></div>
+    </div>
+    <div class="grid">
+      <div class="text">
+        However, he merely chuckles in response, as if the man-cub's accusation had been mere folly. </div>
+      <div class="image"><img src="https://pbs.twimg.com/media/FkW90oxXEA0eZuL.jpg"></div>
+    </div>
+    <div class="grid">
+      <div class="text">
+        Acting as if his own question had been just a slip of the tongue. </div>
+      <div class="image"><img src="https://pbs.twimg.com/media/FkW900-XEBgHjsY.jpg"></div>
+    </div>
+    <div class="grid">
+      <div class="text">
+        A master in the art of deception, Kaa can change his expressions completely in mere seconds. </div>
+      <div class="image"><img src="https://pbs.twimg.com/media/FkW91BxXECY1DFW.jpg"></div>
+    </div>
+    <div class="grid">
+      <div class="text">
+        He instantly sighs with pity, putting on the perfect victim act. </div>
+      <div class="image"><img src="https://pbs.twimg.com/media/FkW91MzXEBMVUkb.jpg"></div>
+    </div>
+    <div class="grid">
+      <div class="text">
+        Lamenting that the man-cub doesn't trust him, playing into his guilt. </div>
+      <div class="image"><img src="https://pbs.twimg.com/media/FkW91XAXEBUX5-4.jpg"></div>
+    </div>
+    <div class="grid">
+      <div class="text">
+        Mowgli finds Kaa's expression, along with the mere insinuation, borderline ridiculous, as if he had any reason
+        to trust the python. </div>
+      <div class="image"><img src="https://pbs.twimg.com/media/FkW91ieXEBgsR1y.jpg"></div>
+    </div>
+    <div class="grid">
+      <div class="text">
+        So, he replies with a simple annoyed "no", while trying to free his wrist from the python's grip.
+        
+        Although it was tight, Kaa was being strangely careful enough to not hurt the boy.
+      </div>
+      <div class="image"><img src="https://pbs.twimg.com/media/FkW91t1XEAAEg93.jpg"></div>
+    </div>
+    <div class="grid">
+      <div class="text">
+        Mowgli manages to free his hand with some effort. </div>
+      <div class="image"><img src="https://pbs.twimg.com/media/FkW916NXEAQ0v8y.jpg"></div>
+    </div>
+    <div class="grid">
+      <div class="text">
+        But Kaa is relentless. </div>
+      <div class="image"><img src="https://pbs.twimg.com/media/FkW92GlXEA8e-JG.jpg"></div>
+    </div>
+    <div class="grid">
+      <div class="text">
+        And this time wraps around Mowgli's ankle. </div>
+      <div class="image"><img src="https://pbs.twimg.com/media/FkW92QuXEBAc51X.jpg"></div>
+    </div>
+    <div class="grid">
+      <div class="text">
+        Giving him another tug. </div>
+      <div class="image"><img src="https://pbs.twimg.com/media/FkW92bxXwAAaRAK.jpg"></div>
+    </div>
+    <div class="grid">
+      <div class="text">
+        Restraining the boy and preventing him from taking any further steps, but without allowing him to fall and
+        injure himself. </div>
+      <div class="image"><img src="https://pbs.twimg.com/media/FkW92m1XEAAroGA.jpg"></div>
+    </div>
+    <div class="grid">
+      <div class="text">
+        Mowgli adorably feels more annoyed than distressed by how easily Kaa is able to restrain him. </div>
+      <div class="image"><img src="https://pbs.twimg.com/media/FkW92x0XEBozEyp.jpg"></div>
+    </div>
+    <div class="grid">
+      <div class="text">
+        And, as he tries to undo his tail from around his ankle, he is intrigued by Kaa's words, who laments that, if
+        Mowgli doesn't trust him, then there is nothing he can do to help him. </div>
+      <div class="image"><img src="https://pbs.twimg.com/media/FkW928gXkAEiymI.jpg"></div>
+    </div>
+    <div class="grid">
+      <div class="text">
+        The seeds of mistrust in the boy's heart are starting to sprout, but in a different direction. </div>
+      <div class="image"><img src="https://pbs.twimg.com/media/FkW93HZXoAAJFXT.jpg"></div>
+    </div>
+    <div class="grid">
+      <div class="text">
+        As he frees himself again from Kaa's tail, stepping his foot down, he poses his own question, wanting to confirm
+        that the python had indeed offered to help him. </div>
+      <div class="image"><img src="https://pbs.twimg.com/media/FkW93S0XkAECh38.jpg"></div>
+    </div>
+    <div class="grid">
+      <div class="text">
+        He holds onto Kaa's tail firmly so it doesn't try to bind him again. The python admires that idea, futile as it
+        is. 
+        
+        He also contemplates how the cogs turn in the boy's mind, how his earlier mistrust directed at him is now
+        shifting in the opposite direction, towards Bagheera.
+      </div>
+      <div class="image"><img src="https://pbs.twimg.com/media/FkW93cxXEAgYmOB.jpg"></div>
+    </div>
+    <div class="grid">
+      <div class="text">
+        The panther had indeed told Mowgli that Kaa had wanted to eat him. 
+        
+        But now the man-cub was considering that he had been told that in an attempt to be convinced to leave the
+        jungle.
+      </div>
+      <div class="image"><img src="https://pbs.twimg.com/media/FkW93pfWAAAsrx9.jpg"></div>
+    </div>
+    <div class="grid">
+      <div class="text">
+        Kaa could very well imagine that foolish child thinking he may have been just a friendly snake helping him sleep
+        that fateful night, hypnotising him to go along with Bagheera's words, them being old friends and all.
+        
+        Just providing a cosy place for him to sleep all wrapped up.
+      </div>
+      <div class="image"><img src="https://pbs.twimg.com/media/FkW930sXEB4JrBD.jpg"></div>
+    </div>
+    <div class="grid">
+      <div class="text">
+        Knowing he can manipulate the man-cub with just words, he can't contain an excited hiss in response,
+        accidentally giving Mowgli a scare that has his heart racing. </div>
+      <div class="image"><img src="https://pbs.twimg.com/media/FkW93_mXEAMF0TB.jpg"></div>
+    </div>
+    <div class="grid">
+      <div class="text">
+        The man-cub drops Kaa's tail with a comically frightened expression, the serpent is simply too good at silent
+        stealth. </div>
+      <div class="image"><img src="https://pbs.twimg.com/media/FkW94KjXkAAwPU8.jpg"></div>
+    </div>
+    <div class="grid">
+      <div class="text">
+        He looks back at Kaa, who is now smiling reassuringly again. </div>
+      <div class="image"><img src="https://pbs.twimg.com/media/FkW94VHXEAE1gte.jpg"></div>
+    </div>
+    <div class="grid">
+      <div class="text">
+        Remembering what those big yellow eyes can do, he clenches his own shut, crossing his forearms in front of him
+        to reinforce in his own torn mind of what the python can do to render him docile and obedient. </div>
+      <div class="image"><img src="https://pbs.twimg.com/media/FkW94gJX0AEeQOt.jpg"></div>
+    </div>
+    <div class="grid">
+      <div class="text">
+        However, Kaa is sounding so kind and generous that he can't help but remember how sweet the lullaby the python
+        had sung to him that night had sounded, giving him the best, although brief, most relaxed sleep he had ever
+        enjoyed. </div>
+      <div class="image"><img src="https://pbs.twimg.com/media/FkW94rRXEAAGlkZ.jpg"></div>
+    </div>
+    <div class="grid">
+      <div class="text">
+        Kaa isn't trying to hypnotise him, though, to the boy's reassurance.
+        
+        Although he is still wary.
+      </div>
+      <div class="image"><img src="https://pbs.twimg.com/media/FkW942fXEAMCH1v.jpg"></div>
+    </div>
+    <div class="grid">
+      <div class="text">
+        Regardless, Mowgli hardens his resolve in keeping his eyes closed. </div>
+      <div class="image"><img src="https://pbs.twimg.com/media/FkW95AAXEAwXUpm.jpg"></div>
+    </div>
+    <div class="grid">
+      <div class="text">
+        The python admires that futile effort, but he has the perfect bait to lay out, knowing the boy simply won't be
+        able to resist it. </div>
+      <div class="image"><img src="https://pbs.twimg.com/media/FkW95KzXEAYqzrj.jpg"></div>
+    </div>
+    <div class="grid">
+      <div class="text">
+        He declares that he will ensure Mowgli won't ever have to leave the jungle, knowing it's exactly what the boy
+        wants to hear. </div>
+      <div class="image"><img src="https://pbs.twimg.com/media/FkW95VzXEDgMzU-.jpg"></div>
+    </div>
+    <div class="grid">
+      <div class="text">
+        And just like he had expected, Mowgli instantly parts his forearms and looks directly at Kaa, his naivety having
+        him ask the serpent how exactly he can do that, his voice drenched in hope. </div>
+      <div class="image"><img src="https://pbs.twimg.com/media/FkW95g7XEAoV1oz.jpg"></div>
+    </div>
+    <div class="grid">
+      <div class="text">
+        He is aware of how powerful the python is. He figures Kaa can certainly keep him safe up in that tree, wrap him
+        up in his coils for bed time, and ensure no one finds out.
+        
+        Still, the boy craves reassurance, after having been betrayed and abandoned by both Baloo and Bagheera.
+      </div>
+      <div class="image"><img src="https://pbs.twimg.com/media/FkW95rMXEBYwYq5.jpg"></div>
+    </div>
+    <div class="grid">
+      <div class="text">
+        However, Kaa had been lost in thought, after catching himself from admitting that his real answer for that
+        question was that he was going to eat the boy, ensuring he'd remain in the jungle as part of him. </div>
+      <div class="image"><img src="https://pbs.twimg.com/media/FkW952UXEBcym6K.jpg"></div>
+    </div>
+    <div class="grid">
+      <div class="text">
+        Just the idea had him daydreaming about it, imagining the boy sliding down his throat, nice and placid, an
+        adorable dopey grin on his happy face. </div>
+      <div class="image"><img src="https://pbs.twimg.com/media/FkW96BsXEA4JZoP.jpg"></div>
+    </div>
+    <div class="grid">
+      <div class="text">
+        The python then recomposed himself before Mowgli suspected a thing. </div>
+      <div class="image"><img src="https://pbs.twimg.com/media/FkW96NvXwAAiQD-.jpg"></div>
+    </div>
+    <div class="grid">
+      <div class="text">
+        He couldn't believe he was about to conquer his prey with just words for the first time. </div>
+      <div class="image"><img src="https://pbs.twimg.com/media/FkW96Y_XEBE-6Cy.jpg"></div>
+    </div>
+    <div class="grid">
+      <div class="text">
+        Kaa keeps things ambiguous, knowing that the spoiled man-cub would increasingly want to know more. </div>
+      <div class="image"><img src="https://pbs.twimg.com/media/FkW96ldXoAA3O0v.jpg"></div>
+    </div>
+    <div class="grid">
+      <div class="text">
+        He can still sense some concern in him, though. </div>
+      <div class="image"><img src="https://pbs.twimg.com/media/FkW96xcXEBk10yS.jpg"></div>
+    </div>
+    <div class="grid">
+      <div class="text">
+        So, the python wraps his tail around Mowgli's shoulders and, although the boy is initially wary, he accepts it.
+      </div>
+      <div class="image"><img src="https://pbs.twimg.com/media/FkW968FXEBcF-r1.jpg"></div>
+    </div>
+    <div class="grid">
+      <div class="text">
+        With how polite and friendly the python had been ever since they had run into each other, and remembering how
+        easily Kaa could choke his neck with that tail of his but didn't, Mowgli starts to think he may have been wrong
+        after all. </div>
+      <div class="image"><img src="https://pbs.twimg.com/media/FkW97GNXkAAY97G.jpg"></div>
+    </div>
+    <div class="grid">
+      <div class="text">
+        Maybe he can trust Kaa, despite everything. </div>
+      <div class="image"><img src="https://pbs.twimg.com/media/FkW97TAWAAAXj4A.jpg"></div>
+    </div>
+    <div class="grid">
+      <div class="text">
+        Sure, the python may be a bit too overbearing and affectionate with his touch, but it could be just his way of
+        being. </div>
+      <div class="image"><img src="https://pbs.twimg.com/media/FkW97eKXEA0xfzX.jpg"></div>
+    </div>
+    <div class="grid">
+      <div class="text">
+        And Mowgli could use a hug after what he had been through.
+        
+        Maybe even a full-body hug...
+      </div>
+      <div class="image"><img src="https://pbs.twimg.com/media/FkW97oGXEB0DQQt.jpg"></div>
+    </div>
+    <div class="grid">
+      <div class="text">
+        Seeing that the man-cub didn't recoil from his touch this time, Kaa tries to push further. </div>
+      <div class="image"><img src="https://pbs.twimg.com/media/FkW97z2XEAMoRte.jpg"></div>
+    </div>
+    <div class="grid">
+      <div class="text">
+        He lays out his terms so he can help the boy. </div>
+      <div class="image"><img src="https://pbs.twimg.com/media/FkW97-8XoAAuBNF.jpg"></div>
+    </div>
+    <div class="grid">
+      <div class="text">
+        And declares Mowgli must trust him, leaning their heads so close together that, if he decided to unleash his
+        hypnotic power, the boy wouldn't have a chance to fight. </div>
+      <div class="image"><img src="https://pbs.twimg.com/media/FkW98JTWIAArFYz.jpg"></div>
+    </div>
+    <div class="grid">
+      <div class="text">
+        With their eyes are almost touching, his cheeks even bulging adorably with the way Kaa's tail his squeezing
+        them, Mowgli becomes aware of his predicament.
+        
+        His eyes widen in response, but, to his almost disappointed surprise, the colours don't come out.
+      </div>
+      <div class="image"><img src="https://pbs.twimg.com/media/FkW98UCXEAEZw2L.jpg"></div>
+    </div>
+    <div class="grid">
+      <div class="text">
+        From his perspective, he can only behold Kaa's wide-eyed gentle smile, of course, not able to see how it
+        wickedly curves at the edges.
+        
+        He really starts to think that he may have been wrong about Kaa all this time.
+      </div>
+      <div class="image"><img src="https://pbs.twimg.com/media/FkW98e2XEBMsld8.jpg"></div>
+    </div>
+    <div class="grid">
+      <div class="text">
+        Maybe he can trust this strange python, despite his peculiar personality.
+        
+        Just like he had trusted Baloo right away...
+      </div>
+      <div class="image"><img src="https://pbs.twimg.com/media/FkW98qnWYAIOUr2.jpg"></div>
+    </div>
+    <div class="grid">
+      <div class="text">
+        Remembering Baloo had betrayed him, Mowgli then closes his eyes and slips under the python's tail. </div>
+      <div class="image"><img src="https://pbs.twimg.com/media/FkW982PXEAwko2p.jpg"></div>
+    </div>
+    <div class="grid">
+      <div class="text">
+        As the man-cub frees himself, Kaa wonders what he could have done wrong, wondering if he shouldn't have just
+        taken the chance and hypnotised the boy. </div>
+      <div class="image"><img src="https://pbs.twimg.com/media/FkW99CrXEAUJGaQ.jpg"></div>
+    </div>
+    <div class="grid">
+      <div class="text">
+        He had been almost certain that the man-cub was ready to listen further, ready to surrender his whole self to
+        him, but given the way Mowgli was already starting to walk away, Kaa knew that he would have to act decisively.
+      </div>
+      <div class="image"><img src="https://pbs.twimg.com/media/FkW99NWXEAYu7wm.jpg"></div>
+    </div>
+    <div class="grid">
+      <div class="text">
+        Despite everything, Kaa can't help but pity that heartbroken boy. </div>
+      <div class="image"><img src="https://pbs.twimg.com/media/FkW99YeX0AA85P4.jpg"></div>
+    </div>
+    <div class="grid">
+      <div class="text">
+        He clearly shouldn't be alone, despite his words, judging by the crestfallen look on his face. </div>
+      <div class="image"><img src="https://pbs.twimg.com/media/FkW99ixXoAEOZm_.jpg"></div>
+    </div>
+    <div class="grid">
+      <div class="text">
+        However, the python doesn't feel bad enough to spare him from his ultimate fate, chasing after him. </div>
+      <div class="image"><img src="https://pbs.twimg.com/media/FkW99u5XECwlMf8.jpg"></div>
+    </div>
+    <div class="grid">
+      <div class="text">
+        His neck curls into a loop, ready to strike. </div>
+      <div class="image"><img src="https://pbs.twimg.com/media/FkW995cWAAALhzA.jpg"></div>
+    </div>
+    <div class="grid">
+      <div class="text">
+        Kaa keeps his head leaned back while saying he doesn't blame the boy, making him sound like he isn't that close,
+        just as he drops the loop over Mowgli's head. </div>
+      <div class="image"><img src="https://pbs.twimg.com/media/FkW9-DdXkAEFVgz.jpg"></div>
+    </div>
+    <div class="grid">
+      <div class="text">
+        And squeezes tightly, binding and binding the man-cub in one move.
+        
+        He didn't want things to end like this, but there is nothing he can do about it now.
+      </div>
+      <div class="image"><img src="https://pbs.twimg.com/media/FkW9-P4XEB8pTDf.jpg"></div>
+    </div>
+    <div class="grid">
+      <div class="text">
+        At least, he will ensure Mowgli feels nothing but pure, sheer bliss once he's done with him, feeling like he
+        owes the boy at least that. </div>
+      <div class="image"><img src="https://pbs.twimg.com/media/FkW9-aZXEBIUTsI.jpg"></div>
+    </div>
+    <div class="grid">
+      <div class="text">
+        Mowgli tries to stay steady as Kaa weighs down on him like a heavy, scaly crown. </div>
+      <div class="image"><img src="https://pbs.twimg.com/media/FkW9-lnXEAc5dDC.jpg"></div>
+    </div>
+    <div class="grid">
+      <div class="text">
+        He listens as the python reaffirms he's not like his false friends. </div>
+      <div class="image"><img src="https://pbs.twimg.com/media/FkW9-wPXEAckj4b.jpg"></div>
+    </div>
+    <div class="grid">
+      <div class="text">
+        Of course, starting to get doubts again, unable to see that Kaa is once again playing the victim. </div>
+      <div class="image"><img src="https://pbs.twimg.com/media/FkW9-_TXEBImMyf.jpg"></div>
+    </div>
+    <div class="grid">
+      <div class="text">
+        But his mind isn't ultimately changed, as Kaa tightens his hold on his eyes, blinding him once more. </div>
+      <div class="image"><img src="https://pbs.twimg.com/media/FkW9_MiXwAIOhog.jpg"></div>
+    </div>
+    <div class="grid">
+      <div class="text">
+        Mowgli brings his hands up to push Kaa away from him, but, as usual, the python is much stronger than he gives
+        away. </div>
+      <div class="image"><img src="https://pbs.twimg.com/media/FkW9_YkWQAIQ1tP.jpg"></div>
+    </div>
+    <div class="grid">
+      <div class="text">
+        He pushes... </div>
+      <div class="image"><img src="https://pbs.twimg.com/media/FkW9_jFWAAAP7TQ.jpg"></div>
+    </div>
+    <div class="grid">
+      <div class="text">
+        And pushes... </div>
+      <div class="image"><img src="https://pbs.twimg.com/media/FkW9_siWIAA4rWV.jpg"></div>
+    </div>
+    <div class="grid">
+      <div class="text">
+        Initially to no avail. </div>
+      <div class="image"><img src="https://pbs.twimg.com/media/FkW9_4JXEAQ_S4g.jpg"></div>
+    </div>
+    <div class="grid">
+      <div class="text">
+        Kaa then gives his head one final squeeze, lowering his own in preparation. </div>
+      <div class="image"><img src="https://pbs.twimg.com/media/FkW-ADgX0AAVXWj.jpg"></div>
+    </div>
+    <div class="grid">
+      <div class="text">
+        And loosens his hold, to the boy's surprise. </div>
+      <div class="image"><img src="https://pbs.twimg.com/media/FkW-AORXEAg8SiF.jpg"></div>
+    </div>
+    <div class="grid">
+      <div class="text">
+        Mowgli then begins pushing Kaa's coil away, foolishly opening his eyes. </div>
+      <div class="image"><img src="https://pbs.twimg.com/media/FkW-AXiXEBASfq4.jpg"></div>
+    </div>
+    <div class="grid">
+      <div class="text">
+        Only to be confronted with something he had completely forgotten about in that fleeting moment. </div>
+      <div class="image"><img src="https://pbs.twimg.com/media/FkW-AiuXEBcQQtX.jpg"></div>
+    </div>
+    <div class="grid">
+      <div class="text">
+        Kaa had been waiting for him all along, the python's eyes wide open and pulsing with rings of colour.
+        
+        He spared the man-cub absolutely no quarry, intending to ensnare him for once and for all.
+      </div>
+      <div class="image"><img src="https://pbs.twimg.com/media/FkW-Ar6XEAA43AQ.jpg"></div>
+    </div>
+    <div class="grid">
+      <div class="text">
+        Even resorting to those strong dark rings again.
+        
+        The boy's weakened arms kept holding the coil that had been employed as a blindfold, which now also served as a
+        crutch for Kaa's hypnosis, like a weight Mowgli had literally just lifted off himself.
+      </div>
+      <div class="image"><img src="https://pbs.twimg.com/media/FkW-A1hXECAlNPW.jpg"></div>
+    </div>
+    <div class="grid">
+      <div class="text">
+        Once again, the python starts to sing, disarming the boy with his sirenlike voice, but this time he isn't
+        crooning a lullaby for the little man-cub to go to sleep. </div>
+      <div class="image"><img src="https://pbs.twimg.com/media/FkW-A_mXEBQqqWs.jpg"></div>
+    </div>
+    <div class="grid">
+      <div class="text">
+        Instead, he sings for the boy to trust in him, holding that same cheery, contagious smile he employed whenever
+        he hypnotised his prey. </div>
+      <div class="image"><img src="https://pbs.twimg.com/media/FkW-BLiXEB4nFlB.jpg"></div>
+    </div>
+    <div class="grid">
+      <div class="text">
+        With how strong Kaa's assault is this time, Mowgli's pupils initially dilate. </div>
+      <div class="image"><img src="https://pbs.twimg.com/media/FkW-BVIXEAwYAT4.jpg"></div>
+    </div>
+    <div class="grid">
+      <div class="text">
+        Before shrinking to pinpricks as Kaa pulls away his coil in case he needs to bind his arms. </div>
+      <div class="image"><img src="https://pbs.twimg.com/media/FkW-Bg1XEDUtE3a.jpg"></div>
+    </div>
+    <div class="grid">
+      <div class="text">
+        Not that it will be needed, for the boy's eyes ultimately begin reflecting the colours pulsing from Kaa's eyes.
+      </div>
+      <div class="image"><img src="https://pbs.twimg.com/media/FkW-BqlXECg_M5j.jpg"></div>
+    </div>
+    <div class="grid">
+      <div class="text">
+        At a much faster rate this time. </div>
+      <div class="image"><img src="https://pbs.twimg.com/media/FkW-B0HXEAIAjMr.jpg"></div>
+    </div>
+    <div class="grid">
+      <div class="text">
+        The boy falling into a trance with absolutely no resistance on his behalf. </div>
+      <div class="image"><img src="https://pbs.twimg.com/media/FkW-B-oX0AA_Mjr.jpg"></div>
+    </div>
+    <div class="grid">
+      <div class="text">
+        That talltale 𝙋𝙄𝙉𝙂 ringing in the back of their minds and establishing their hypnotic connection once more.
+      </div>
+      <div class="image"><img src="https://pbs.twimg.com/media/FkW-CKXWAAAxypb.jpg"></div>
+    </div>
+    <div class="grid">
+      <div class="text">
+        Once again, Kaa has won. </div>
+      <div class="image"><img src="https://pbs.twimg.com/media/FkW-CWKXEBUQ3QZ.jpg"></div>
+    </div>
+    <div class="grid">
+      <div class="text">
+        Returning his eyes slowly back to normal, the python extends his tail forward.
+        
+        He's not done yet.
+      </div>
+      <div class="image"><img src="https://pbs.twimg.com/media/FkW-CgpXEBcbtA7.jpg"></div>
+    </div>
+    <div class="grid">
+      <div class="text">
+        This time, he's going to ensure he sends the boy into a much deeper trance, one he will hopefully never wake up
+        from. </div>
+      <div class="image"><img src="https://pbs.twimg.com/media/FkW-CsUXEAsOhrm.jpg"></div>
+    </div>
+    <div class="grid">
+      <div class="text">
+        Completely in drowned mindless bliss, Mowgli's arms had drooped down uselessly to their sides, his shoulders
+        slouching forward. </div>
+      <div class="image"><img src="https://pbs.twimg.com/media/FkW-C3zXoAAAA1f.jpg"></div>
+    </div>
+    <div class="grid">
+      <div class="text">
+        He sees the tip of Kaa's tail beckoning for him. </div>
+      <div class="image"><img src="https://pbs.twimg.com/media/FkW-DCKXEAI-azG.jpg"></div>
+    </div>
+    <div class="grid">
+      <div class="text">
+        And, with a simple nod and an almost smitten expression on his face, Mowgli begins following it. </div>
+      <div class="image"><img src="https://pbs.twimg.com/media/FkW-DMhWQAAXCi-.jpg"></div>
+    </div>
+    <div class="grid">
+      <div class="text">
+        He shuts his eyes as commanded, feeling perfectly safe. </div>
+      <div class="image"><img src="https://pbs.twimg.com/media/FkW-DX2WIAAFedW.jpg"></div>
+    </div>
+    <div class="grid">
+      <div class="text">
+        As he half-lumbers, half-marches onward. </div>
+      <div class="image"><img src="https://pbs.twimg.com/media/FkW-DiYXEBA7uJn.jpg"></div>
+    </div>
+    <div class="grid">
+      <div class="text">
+        Kaa keeps beckoning the boy to walk along the tree branch despite his closed eyes, watching with a satisfied,
+        contented smile.
+        
+        Not only had he gotten his prey in a more agreeable mood, he had also washed away all that unwanted sadness with
+        his hypnosis.
+      </div>
+      <div class="image"><img src="https://pbs.twimg.com/media/FkW-DvWXEAga27c.jpg"></div>
+    </div>
+    <div class="grid">
+      <div class="text">
+        His hold on the man-cub's mind is so great that the boy would march all the way off the branch and fall to his
+        death with nay a worry or care. </div>
+      <div class="image"><img src="https://pbs.twimg.com/media/FkW-D7IWQAAsBA-.jpg"></div>
+    </div>
+    <div class="grid">
+      <div class="text">
+        But Kaa wants none of that, the tip of his tail already readying itself whle he built slack with the rest of his
+        body in order to lower a loop down. </div>
+      <div class="image"><img src="https://pbs.twimg.com/media/FkW-EJTWQAE4cAE.jpg"></div>
+    </div>
+    <div class="grid">
+      <div class="text">
+        And he catches Mowgli just in time, pressing the tip of his tail against the centre of his forehead, holding the
+        boy's whole weight oh so effortlessly. </div>
+      <div class="image"><img src="https://pbs.twimg.com/media/FkW-EUzXEBUe5m7.jpg"></div>
+    </div>
+    <div class="grid">
+      <div class="text">
+        If only the man-cub could see himself at that moment, being completely dependant on him...
+        
+        Kaa wondered if that would have changed his attitude, but he didn't eally believe it.
+      </div>
+      <div class="image"><img src="https://pbs.twimg.com/media/FkW-EfNXEA0KOf8.jpg"></div>
+    </div>
+    <div class="grid">
+      <div class="text">
+        As Mowgli's leg adorably sways back and forth while hanging off the air, Kaa flexes a length of his body, which
+        undulates and ripples. </div>
+      <div class="image"><img src="https://pbs.twimg.com/media/FkW-EpRXEA0sc35.jpg"></div>
+    </div>
+    <div class="grid">
+      <div class="text">
+        Revealing a fine control over his coils as he shapes his tail into a staircase while pushing Mowgli slightly
+        back so he can resume his slumbering march. </div>
+      <div class="image"><img src="https://pbs.twimg.com/media/FkW-Ez_XEA4ArIo.jpg"></div>
+    </div>
+    <div class="grid">
+      <div class="text">
+        Thanks to the hypnotic connection both predator and prey share, Mowgli walks down those scaly steps with a
+        perfect form, beyond any trained acrobat, to Kaa's great amusement. </div>
+      <div class="image"><img src="https://pbs.twimg.com/media/FkW-E-1XEA4n4KE.jpg"></div>
+    </div>
+    <div class="grid">
+      <div class="text">
+        The python can't help but gush at how those bare soles feel amazing against his cool scales. </div>
+      <div class="image"><img src="https://pbs.twimg.com/media/FkW-FLaXwAA-mlC.jpg"></div>
+    </div>
+    <div class="grid">
+      <div class="text">
+        Mowgli just keeps taking step after mindless step downwards. </div>
+      <div class="image"><img src="https://pbs.twimg.com/media/FkW-FVcWYAAF3SJ.jpg"></div>
+    </div>
+    <div class="grid">
+      <div class="text">
+        Nearing the end of the python's tail without realising it. </div>
+      <div class="image"><img src="https://pbs.twimg.com/media/FkW-FgbXgAABmlT.jpg"></div>
+    </div>
+    <div class="grid">
+      <div class="text">
+        But Kaa is there to catch him, promising Mowgli that, as long as he knows Kaa is around, he will be safe and
+        sound. </div>
+      <div class="image"><img src="https://pbs.twimg.com/media/FkW-FqYXEAswfJW.jpg"></div>
+    </div>
+    <div class="grid">
+      <div class="text">
+        He even begins to form a loop around the boy to reinforce that promise. </div>
+      <div class="image"><img src="https://pbs.twimg.com/media/FkW-F0dXEBMzlr8.jpg"></div>
+    </div>
+    <div class="grid">
+      <div class="text">
+        That and it helps to tire the boy, making him walk endlessly without going anywhere. </div>
+      <div class="image"><img src="https://pbs.twimg.com/media/FkW-F92XEAwTynJ.jpg"></div>
+    </div>
+    <div class="grid">
+      <div class="text">
+        Once he's had enough, Kaa begins to incline him forward. </div>
+      <div class="image"><img src="https://pbs.twimg.com/media/FkW-GHtXEAs7jVO.jpg"></div>
+    </div>
+    <div class="grid">
+      <div class="text">
+        Closing the loop around the man-cub. </div>
+      <div class="image"><img src="https://pbs.twimg.com/media/FkW-GRyXEAkwJDu.jpg"></div>
+    </div>
+    <div class="grid">
+      <div class="text">
+        And having the boy almost defy gravity at one point! </div>
+      <div class="image"><img src="https://pbs.twimg.com/media/FkW-GebX0AAg626.jpg"></div>
+    </div>
+    <div class="grid">
+      <div class="text">
+        Mowgli keeps trying to walk even as the scaly floor disappears from under his soles. </div>
+      <div class="image"><img src="https://pbs.twimg.com/media/FkW-GpxXEAAI2GE.jpg"></div>
+    </div>
+    <div class="grid">
+      <div class="text">
+        Until Kaa has him slide down on his back. </div>
+      <div class="image"><img src="https://pbs.twimg.com/media/FkW-G0bXEA8ntsS.jpg"></div>
+    </div>
+    <div class="grid">
+      <div class="text">
+        With the man-cub falling asleep with a perfectly timed verse commanding him to slip into slumber, his arms
+        hanging uselessly at his sides. </div>
+      <div class="image"><img src="https://pbs.twimg.com/media/FkW-G-oXEA46Ikv.jpg"></div>
+    </div>
+    <div class="grid">
+      <div class="text">
+        Having wrapped the tip of his tail around the end of the same branch Mowgli had been walking on, with the
+        man-cub having progressed no distance, Kaa swayed the makeshift hammock the loop of his coils now formed. </div>
+      <div class="image"><img src="https://pbs.twimg.com/media/FkW-HIQXEBM6vYq.jpg"></div>
+    </div>
+    <div class="grid">
+      <div class="text">
+        Rocking the sleeping boy while continuing his sinful serenade, ensuring his morsel would never wake up from his
+        slumber. </div>
+      <div class="image"><img src="https://pbs.twimg.com/media/FkW-HTRXkAATPZE.jpg"></div>
+    </div>
+    <div class="grid">
+      <div class="text">
+        He always loved seeing those sleepy smiles on his prey. 
+        
+        Almost as much as those hypnotised, dopey grins.
+      </div>
+      <div class="image"><img src="https://pbs.twimg.com/media/FkW-He8XEAk2IF7.jpg"></div>
+    </div>
+    <div class="grid">
+      <div class="text">
+        On their previous encounter, the sensation of falling was what had woken the man-cub up from his trance.
+        
+        This time, Kaa wants to ensure that won't be a risk.
+      </div>
+      <div class="image"><img src="https://pbs.twimg.com/media/FkW-HqBXEAMdcIn.jpg"></div>
+    </div>
+    <div class="grid">
+      <div class="text">
+        So, while unwrapping the end of his tail from the tree branch, he begins to slide Mowgli down it. </div>
+      <div class="image"><img src="https://pbs.twimg.com/media/FkW-H1iXEAoHZf3.jpg"></div>
+    </div>
+    <div class="grid">
+      <div class="text">
+        The boy's legs stiffen as they hang off the tip, with Kaa flexing the length of his tail </div>
+      <div class="image"><img src="https://pbs.twimg.com/media/FkW-IAOXEB0xEzh.jpg"></div>
+    </div>
+    <div class="grid">
+      <div class="text">
+        Only for his back to arch as Kaa suddenly begins pushing. </div>
+      <div class="image"><img src="https://pbs.twimg.com/media/FkW-IKqXEAswyqu.jpg"></div>
+    </div>
+    <div class="grid">
+      <div class="text">
+        And then the sleeping boy is tossed into the air. </div>
+      <div class="image"><img src="https://pbs.twimg.com/media/FkW-IVHWQAEpTsL.jpg"></div>
+    </div>
+    <div class="grid">
+      <div class="text">
+        Remaining still and snoozing, even as the python catches him by pressing the tip of his tail against the small
+        of his back. </div>
+      <div class="image"><img src="https://pbs.twimg.com/media/FkW-If-XEAATM2R.jpg"></div>
+    </div>
+    <div class="grid">
+      <div class="text">
+        Confirming the boy is deeply entranced.
+        
+        Just to be sure, Kaa prepares another launch.
+      </div>
+      <div class="image"><img src="https://pbs.twimg.com/media/FkW-IrUXgAIMsWr.jpg"></div>
+    </div>
+    <div class="grid">
+      <div class="text">
+        And throws Mowgli into the air once more, but this time shifting his position. </div>
+      <div class="image"><img src="https://pbs.twimg.com/media/FkW-I1SWYAAQflT.jpg"></div>
+    </div>
+    <div class="grid">
+      <div class="text">
+        Safely catching the man-cub upside-down by pressing the tip of his tail against the centre of his head, with the
+        boy remaining fast asleep with a perfectly balanced form, his whole body rigid as a board. </div>
+      <div class="image"><img src="https://pbs.twimg.com/media/FkW-JBlXEHA_lzd.jpg"></div>
+    </div>
+    <div class="grid">
+      <div class="text">
+        Kaa surprised even himself. 
+        
+        This is the deepest he has ever taken someone under.
+      </div>
+      <div class="image"><img src="https://pbs.twimg.com/media/FkW-JNrXEBAjB3z.jpg"></div>
+    </div>
+    <div class="grid">
+      <div class="text">
+        He sees the man-cub's lips parting, wondering what it could mean. </div>
+      <div class="image"><img src="https://pbs.twimg.com/media/FkW-JYzXoAAOVcp.jpg"></div>
+    </div>
+    <div class="grid">
+      <div class="text">
+        Only to catch him snoring. </div>
+      <div class="image"><img src="https://pbs.twimg.com/media/FkW-JlRXEAIG18d.jpg"></div>
+    </div>
+    <div class="grid">
+      <div class="text">
+        He tases Mowgli about it while turning his head upside-down to get a better look at the boy's adorable
+        slumbering face. </div>
+      <div class="image"><img src="https://pbs.twimg.com/media/FkW-JxMXEAggTIU.jpg"></div>
+    </div>
+    <div class="grid">
+      <div class="text">
+        The man-cub's hypnotised mind interprets it as him being naughty, so he apologises sincerely for his supposed
+        misdeed. </div>
+      <div class="image"><img src="https://pbs.twimg.com/media/FkW-J9RXoAAEnQ0.jpg"></div>
+    </div>
+    <div class="grid">
+      <div class="text">
+        Kaa didn't know the man-cub well enough, but from their brief interaction, he had a feeling his morsel wouldn't
+        be nearly this polite without his influence, a further testament to how powerful his hypnosis could be. </div>
+      <div class="image"><img src="https://pbs.twimg.com/media/FkW-KHlXEBEpPTi.jpg"></div>
+    </div>
+    <div class="grid">
+      <div class="text">
+        Not like it was going to make a difference concerning his ultimate fate. </div>
+      <div class="image"><img src="https://pbs.twimg.com/media/FkW-KTIXEAkmuSk.jpg"></div>
+    </div>
+    <div class="grid">
+      <div class="text">
+        With victory assured, Kaa relaxes back on the tree branch.
+        
+        His little display of dominance has worn him out quite a bit.
+      </div>
+      <div class="image"><img src="https://pbs.twimg.com/media/FkW-KfoXEAQsodj.jpg"></div>
+    </div>
+    <div class="grid">
+      <div class="text">
+        No one will stop him now, though, he's sure of it. </div>
+      <div class="image"><img src="https://pbs.twimg.com/media/FkW-Kr1XEAMxcvj.jpg"></div>
+    </div>
+    <div class="grid">
+      <div class="text">
+        No one will get in the way between him and his long-awaited feast! </div>
+      <div class="image"><img src="https://pbs.twimg.com/media/FkW-K3tXEAsE89G.jpg"></div>
+    </div>
+    <div class="grid">
+      <div class="text">
+        Kaa can already taste the man-cub slipping past his jaws and sliding down the hatch. </div>
+      <div class="image"><img src="https://pbs.twimg.com/media/FkW-LC4XgAIkYiF.jpg"></div>
+    </div>
+    <div class="grid">
+      <div class="text">
+        But first, he's got to wrap him up for dinner.
+        
+        So, he undulates his tail, sliding Mowgli down the tip.
+      </div>
+      <div class="image"><img src="https://pbs.twimg.com/media/FkW-LOiXEAYeK68.jpg"></div>
+    </div>
+    <div class="grid">
+      <div class="text">
+        With his fine control over his coils and expert manouvering, the boy was at no danger of being dropped. </div>
+      <div class="image"><img src="https://pbs.twimg.com/media/FkW-LZZXEAYZE9W.jpg"></div>
+    </div>
+    <div class="grid">
+      <div class="text">
+        That dreamy smile never leaves his lips as he carelessly slides down Kaa's long body. </div>
+      <div class="image"><img src="https://pbs.twimg.com/media/FkW-LmNXEAcOGxU.jpg"></div>
+    </div>
+    <div class="grid">
+      <div class="text">
+        Straight into a cocoon Kaa had been arranging to welcome him in. </div>
+      <div class="image"><img src="https://pbs.twimg.com/media/FkW-LzhWIAAuYj6.jpg"></div>
+    </div>
+    <div class="grid">
+      <div class="text">
+        The coils engulf Mowgli's body completely at first, tightening upwards so his limp arms can be pinned at their
+        sides. </div>
+      <div class="image"><img src="https://pbs.twimg.com/media/FkW-L-GXEBUtt-y.jpg"></div>
+    </div>
+    <div class="grid">
+      <div class="text">
+        Before his head is freed, trapping him from his neck all the way down to his ankles this time. </div>
+      <div class="image"><img src="https://pbs.twimg.com/media/FkW-MJRXkAIH6Ox.jpg"></div>
+    </div>
+    <div class="grid">
+      <div class="text">
+        The coils then give the sleeping man-cub a firm squeeze, ensuring he won't go anymore. </div>
+      <div class="image"><img src="https://pbs.twimg.com/media/FkW-MU6XEBkdZV5.jpg"></div>
+    </div>
+    <div class="grid">
+      <div class="text">
+        Even if Kaa hadn't employed a contest of minds, the sheer difference in strength between his mighty coils and
+        the man-cub's puny body was almost pitying. 
+        
+        Mowgli had truly been helpless all along.
+      </div>
+      <div class="image"><img src="https://pbs.twimg.com/media/FkW-MgnXEAE9pEl.jpg"></div>
+    </div>
+    <div class="grid">
+      <div class="text">
+        And now, it was time to finish the job. This time for good.
+        
+        Kaa begins to reel the boy back up, so he can sit him back on the branch in preparation for his long-awaited
+        feast.
+      </div>
+      <div class="image"><img src="https://pbs.twimg.com/media/FkW-MsvWIAAe6OK.jpg"></div>
+    </div>
+    <div class="grid">
+      <div class="text">
+        However, a tug on his tail prevents Kaa from completely unhinging his jaw, the python gasping loudly in
+        response. </div>
+      <div class="image"><img src="https://pbs.twimg.com/media/FkW-M4jWQBI5J3y.jpg"></div>
+    </div>
+    <div class="grid">
+      <div class="text">
+        Only then does he realise how low he had allowed his tail to drop carelessly down to the jungle ground, so
+        distracted he had been by the man-cub. </div>
+      <div class="image"><img src="https://pbs.twimg.com/media/FkW-NEGXEBQt_Yw.jpg"></div>
+    </div>
+    <div class="grid">
+      <div class="text">
+        A further testament to how special this boy had become to him. </div>
+      <div class="image"><img src="https://pbs.twimg.com/media/FkW-NOXWIAAKq-0.jpg"></div>
+    </div>
+    <div class="grid">
+      <div class="text">
+        Nonetheless, he is seething at how, once again, his meal had been interrupted by an unwanted third party.
+        
+        He couldn't believe his rotten luck!
+      </div>
+      <div class="image"><img src="https://pbs.twimg.com/media/FkW-NaWXEAo5W-D.jpg"></div>
+    </div>
+    <div class="grid">
+      <div class="text">
+        It was likely that panther, looking for the boy he had been supposed to guard.
+        
+        And now Kaa had to deal with him.
+      </div>
+      <div class="image"><img src="https://pbs.twimg.com/media/FkW-NmyXEAsNh6i.jpg"></div>
+    </div>
+    <div class="grid">
+      <div class="text">
+        The idea of deceiving Bagheera while holding his sleeping wrapped-up delicious man-cub in his coils did sound
+        appealing, though. </div>
+      <div class="image"><img src="https://pbs.twimg.com/media/FkW-NyEXEA4LBsQ.jpg"></div>
+    </div>
+    <div class="grid">
+      <div class="text">
+        Kaa would just hypnotise him into believing the boy had gone off to the man-village and arrived safely.
+        
+        Despite their differences, he wouldn't allow an old friend to live the rest of his life worrying he had failed
+        in his duty.
+      </div>
+      <div class="image"><img src="https://pbs.twimg.com/media/FkW-N91XEA0epPD.jpg"></div>
+    </div>
+    <div class="grid">
+      <div class="text">
+        Yes, he'd even pretend to be resentful at having lost a meal... </div>
+      <div class="image"><img src="https://pbs.twimg.com/media/FkW-OJ1XEAoRDhv.jpg"></div>
+    </div>
+    <div class="grid">
+      <div class="text">
+        So, Kaa confirms his presence, loud and clear. </div>
+      <div class="image"><img src="https://pbs.twimg.com/media/FkW-OUbXEHEwrj3.jpg"></div>
+    </div>
+    <div class="grid">
+      <div class="text">
+        And then then starts sliding down the tree, hoping to deal with whomever it is quickly so he can return to his
+        delicious man-cub. </div>
+      <div class="image"><img src="https://pbs.twimg.com/media/FkW-OgDXEAIAz4j.jpg"></div>
+    </div>
+
+    <div class="text">
+      <strong>THE END</strong>
+    </div>
+
+    <blockquote style="margin-top: 4rem;">
+      If you enjoyed this, have a look at my catalogue. I have a few stories with snake and naga Kaa, along with
+      other
+      hypnotic tales!
+      <footer>
+        <cite>- Twan Andersen</cite>
+      </footer>
+    </blockquote>
+
+    <div>
+      <a href="https://twitter.com/twanandersen" role="button" target="_blank" style="margin-right: 0.5rem;">Twitter</a>
+      <a href="https://www.gayspiralstories.com/user/listSeries/10018149" role="button" target="_blank">Gay
+        Spiral
+        Stories</a>
+    </div>
+
+  </div>
+  
+</body>
+
+</html>
