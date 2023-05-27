@@ -1,1 +1,0 @@
-import{o as a,c,a as t,t as s}from"./index-eeef7401.js";const o={class:"fs-4 mb-2"},n=t("span",{class:"mx-2"},">",-1),r={class:"text-light"},p={__name:"SiteHeader",props:{category:String,title:String},setup(e){return(i,l)=>(a(),c("div",o,[t("span",null,s(e.category),1),n,t("span",r,s(e.title),1)]))}};export{p as _};
