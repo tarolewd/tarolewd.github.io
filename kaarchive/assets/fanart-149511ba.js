@@ -1,0 +1,1 @@
+import{a as t,n as a}from"./creators-95e2da85.js";const s=[{id:"thiswaslost",title:"thiswaslost",creator:t,count:32},{id:"nya",title:"nya",creator:a,count:26},{id:"boundaru",title:"boundaru",creator:boundaru,count:12,isNew:!0}];export{s as default};
