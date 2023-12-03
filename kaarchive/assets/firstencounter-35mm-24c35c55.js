@@ -1,1 +1,0 @@
-const e=[{type:"HD",embeded:"https://mega.nz/embed/RIcBRLzS#zQfI1uRfsqeLRe5oDTexc8gaJHfnQ3y-YBVNTccmeos"},{type:"4K",embeded:"https://mega.nz/embed/ocdXCQxJ#F-O2XhK9Jzu0ProTrA15ut0UHPJKA_N3NG-tO5cl7HM"}];export{e as default};
