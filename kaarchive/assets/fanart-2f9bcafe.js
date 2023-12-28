@@ -1,1 +1,0 @@
-import{a,n as s,b as o}from"./creators-93af4871.js";const r=[{id:"thiswaslost",creator:a,count:32},{id:"nya",creator:s,count:32,isNew:!1},{id:"boundaru",creator:o,count:12,isNew:!1}];export{r as default};
