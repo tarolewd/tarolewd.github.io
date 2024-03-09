@@ -1,0 +1,1 @@
+const e=[{id:"concept-art",title:"Concept Art",count:31},{id:"cel",title:"Cels",count:32},{id:"cover",title:"Covers",count:9,isNew:!1},{id:"advertisement",title:"Advertisement",count:15,isNew:!1}];export{e as default};
